@@ -18,7 +18,18 @@
 
 package org.apache.metron.writer;
 
+import static java.lang.String.format;
+
 import com.google.common.collect.Iterables;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.concurrent.TimeUnit;
 import org.apache.metron.common.Constants;
 import org.apache.metron.common.configuration.writer.WriterConfiguration;
 import org.apache.metron.common.error.MetronError;
@@ -32,15 +43,6 @@ import org.apache.storm.tuple.Tuple;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.concurrent.TimeUnit;
-
 /**
  * This component implements message batching, with both flush on queue size, and flush on queue timeout.
  * There is a queue for each sensorType.
@@ -51,7 +53,7 @@ import java.util.concurrent.TimeUnit;
  *   modified by batchTimeoutDivisor, in case multiple batching writers are daisy-chained in one topology.
  *   - If some sensors configure their own batchTimeouts, they are compared with the default.  Batch
  *   timeouts greater than the default will be ignored, because they can cause message recycling in Storm.
- *   Batch timeouts configured to <= zero, or undefined, mean use the default.
+ *   Batch timeouts configured to {@literal <}= zero, or undefined, mean use the default.
  *   - The *smallest* configured batchTimeout among all sensor types, greater than zero and less than
  *   the default, will be used to configure the 'topology.tick.tuple.freq.secs' for the Bolt.  If there are no
  *   valid configured batchTimeouts, the defaultBatchTimeout will be used.
@@ -115,15 +117,40 @@ public class BulkWriterComponent<MESSAGE_T> {
   }
 
   public void error(String sensorType, Throwable e, Iterable<Tuple> tuples, MessageGetStrategy messageGetStrategy) {
-    tuples.forEach(t -> collector.ack(t));
+    LOG.error(format("Failing %d tuple(s); sensorType=%s", Iterables.size(tuples), sensorType), e);
     MetronError error = new MetronError()
-            .withSensorType(sensorType)
+            .withSensorType(Collections.singleton(sensorType))
             .withErrorType(Constants.ErrorType.INDEXING_ERROR)
             .withThrowable(e);
-    if(!Iterables.isEmpty(tuples)) {
-      LOG.error("Failing {} tuples", Iterables.size(tuples), e);
-    }
     tuples.forEach(t -> error.addRawMessage(messageGetStrategy.get(t)));
+    handleError(tuples, error);
+  }
+
+  /**
+   * Error a set of tuples that may not contain a valid message.
+   *
+   * <p>Without a valid message, the source type is unknown.
+   * <p>Without a valid message, the JSON message cannot be added to the error.
+   *
+   * @param e The exception that occurred.
+   * @param tuples The tuples to error that may not contain valid messages.
+   */
+  public void error(Throwable e, Iterable<Tuple> tuples) {
+    LOG.error(format("Failing %d tuple(s)", Iterables.size(tuples)), e);
+    MetronError error = new MetronError()
+            .withErrorType(Constants.ErrorType.INDEXING_ERROR)
+            .withThrowable(e);
+    handleError(tuples, error);
+  }
+
+  /**
+   * Errors a set of tuples.
+   *
+   * @param tuples The tuples to error.
+   * @param error
+   */
+  private void handleError(Iterable<Tuple> tuples, MetronError error) {
+    tuples.forEach(t -> collector.ack(t));
     ErrorUtils.handleError(collector, error);
   }
 

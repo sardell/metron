@@ -18,15 +18,16 @@
 package org.apache.metron.common.configuration.profiler;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonValue;
+
+import java.io.Serializable;
 
 /**
  * A Stellar expression that is executed to produce a single
  * measurement that is persisted within the profile store.
  */
-public class ProfileResultExpressions {
+public class ProfileResultExpressions implements Serializable {
 
-  @JsonIgnore
   private String expression;
 
   @JsonCreator
@@ -34,6 +35,7 @@ public class ProfileResultExpressions {
     this.expression = expression;
   }
 
+  @JsonValue
   public String getExpression() {
     return expression;
   }
