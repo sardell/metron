@@ -89,7 +89,7 @@
                   <td> </td>
                 </tr>
 
-                <tr *ngFor="let alert of subGroup.response.results" [ngClass]="{'selected' : selectedAlerts.indexOf(alert) != -1, 'd-none': !subGroup.expand || !subGroup.show}" (click)="showDetails($event, alert)">
+                <tr attr.data-qe-id="{{ 'subGroupItem-' + subGroup.key + '-' + alertIndex }}" *ngFor="let alert of subGroup.response.results; let alertIndex = index;" [ngClass]="{'selected' : selectedAlerts.indexOf(alert) != -1, 'd-none': !subGroup.expand || !subGroup.show}" (click)="showDetails($event, alert)">
                   <td [attr.colspan]="2" [ngStyle]="{'padding-left.px': (16 * (subGroup.level -1)) + 23}" (click)="addFilter(threatScoreFieldName(), getScore(alert.source))">
                     <div appAlertSeverity [severity]="getScore(alert.source)">
                       <a> {{ hasScore(alert.source) ? getScore(alert.source) : '-' }}</a>
