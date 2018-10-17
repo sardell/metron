@@ -25,8 +25,8 @@ export class MetronDialogBox {
                   <div class="modal-dialog modal-sm" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
-                            <span aria-hidden="true">&times;</span> 
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
                         </button>
                         <span class="modal-title"><b>` + title + `</b></span>
                       </div>
@@ -53,21 +53,21 @@ export class MetronDialogBox {
     let eventEmitter = new EventEmitter<boolean>();
     let element = this.createDialogBox(message, 'Confirmation');
 
-    $(element).find('.metron-dialog').modal('show');
+    // $(element).find('.metron-dialog').modal('show');
 
-    $(element).find('.btn-primary').on('click', function (e) {
-      $(element).find('.metron-dialog').modal('hide');
-      eventEmitter.emit(true);
-    });
+    // $(element).find('.btn-primary').on('click', function (e) {
+    //   $(element).find('.metron-dialog').modal('hide');
+    //   eventEmitter.emit(true);
+    // });
 
-    $(element).find('.form-enable-disable-button').on('click', function (e) {
-      $(element).find('.metron-dialog').modal('hide');
-      eventEmitter.emit(false);
-    });
+    // $(element).find('.form-enable-disable-button').on('click', function (e) {
+    //   $(element).find('.metron-dialog').modal('hide');
+    //   eventEmitter.emit(false);
+    // });
 
-    $(element).find('.metron-dialog').on('hidden.bs.modal', function (e) {
-      $(element).remove();
-    });
+    // $(element).find('.metron-dialog').on('hidden.bs.modal', function (e) {
+    //   $(element).remove();
+    // });
 
     return eventEmitter;
 
