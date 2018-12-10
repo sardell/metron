@@ -31,7 +31,7 @@ import { KafkaService } from '../../service/kafka.service';
 import { KafkaTopic } from '../../model/kafka-topic';
 import { GrokValidationService } from '../../service/grok-validation.service';
 import { MetronAlerts } from '../../shared/metron-alerts';
-import { SensorParserConfig } from '../../model/sensor-parser-config';
+import { ParserConfigModel } from '../../sensors/models/parser-config.model';
 import { ParseMessageRequest } from '../../model/parse-message-request';
 import { SensorParserContext } from '../../model/sensor-parser-context';
 import { AuthenticationService } from '../../service/authentication.service';
@@ -67,9 +67,9 @@ class MockActivatedRoute {
 
 class MockSensorParserConfigService extends SensorParserConfigService {
   private name: string;
-  private sensorParserConfig: SensorParserConfig;
+  private sensorParserConfig: ParserConfigModel;
   private parsedMessage: any;
-  private postedSensorParserConfig: SensorParserConfig;
+  private postedSensorParserConfig: ParserConfigModel;
   private throwError: boolean;
 
   constructor(
@@ -79,10 +79,10 @@ class MockSensorParserConfigService extends SensorParserConfigService {
     super(http2, config2);
   }
 
-  public post(
+  public saveConfig(
     name: string,
-    sensorParserConfig: SensorParserConfig
-  ): Observable<SensorParserConfig> {
+    sensorParserConfig: ParserConfigModel
+  ): Observable<ParserConfigModel> {
     if (this.throwError) {
       let error = new RestError();
       error.message = 'SensorParserConfig post error';
@@ -95,14 +95,14 @@ class MockSensorParserConfigService extends SensorParserConfigService {
     });
   }
 
-  public get(name: string): Observable<SensorParserConfig> {
+  public getConfig(name: string): Observable<ParserConfigModel> {
     return Observable.create(observer => {
       observer.next(this.sensorParserConfig);
       observer.complete();
     });
   }
 
-  public getAll(): Observable<{}> {
+  public getAllConfig(): Observable<{}> {
     return Observable.create(observer => {
       let results = {};
       results[this.name] = this.sensorParserConfig;
@@ -132,7 +132,7 @@ class MockSensorParserConfigService extends SensorParserConfigService {
 
   public setSensorParserConfig(
     name: string,
-    sensorParserConfig: SensorParserConfig
+    sensorParserConfig: ParserConfigModel
   ) {
     this.name = name;
     this.sensorParserConfig = sensorParserConfig;
@@ -627,7 +627,7 @@ describe('Component: SensorParserConfig', () => {
 
   it('should createForms', async(() => {
     component.sensorParserConfig = Object.assign(
-      new SensorParserConfig(),
+      new ParserConfigModel('TestConfigId01'),
       squidSensorParserConfig
     );
     component.createForms();
@@ -664,7 +664,7 @@ describe('Component: SensorParserConfig', () => {
     );
     component.init('new');
 
-    let expectedSensorParserConfig = new SensorParserConfig();
+    let expectedSensorParserConfig = new ParserConfigModel('new');
     expectedSensorParserConfig.parserClassName =
       'org.apache.metron.parsers.GrokParser';
     expect(component.sensorParserConfig).toEqual(expectedSensorParserConfig);
@@ -679,7 +679,7 @@ describe('Component: SensorParserConfig', () => {
 
     spyOn(component, 'getKafkaStatus');
     let sensorParserConfig = Object.assign(
-      new SensorParserConfig(),
+      new ParserConfigModel('squid'),
       squidSensorParserConfig
     );
     sensorParserConfigService.setSensorParserConfig(
@@ -701,7 +701,7 @@ describe('Component: SensorParserConfig', () => {
 
     component.init('squid');
     expect(component.sensorParserConfig).toEqual(
-      Object.assign(new SensorParserConfig(), squidSensorParserConfig)
+      Object.assign(new ParserConfigModel('squid'), squidSensorParserConfig)
     );
     expect(component.sensorNameValid).toEqual(true);
     expect(component.getKafkaStatus).toHaveBeenCalled();
@@ -748,7 +748,7 @@ describe('Component: SensorParserConfig', () => {
       'Could not find grok statement in HDFS or classpath at /patterns/squid'
     );
 
-    sensorParserConfig = new SensorParserConfig();
+    sensorParserConfig = new ParserConfigModel('bro');
     sensorParserConfig.sensorTopic = 'bro';
     sensorParserConfigService.setSensorParserConfig('bro', sensorParserConfig);
     component.showAdvancedParserConfiguration = false;
@@ -771,6 +771,8 @@ describe('Component: SensorParserConfig', () => {
   it('should handle onSetKafkaTopic', async(() => {
     spyOn(component, 'getKafkaStatus');
     spyOn(component, 'isConfigValid');
+
+    component.init('new');
 
     component.onSetKafkaTopic();
     expect(component.getKafkaStatus).not.toHaveBeenCalled();
@@ -809,6 +811,8 @@ describe('Component: SensorParserConfig', () => {
     spyOn(component, 'hidePane');
     spyOn(component, 'isConfigValid');
 
+    component.init('new');
+
     component.onParserTypeChange();
     expect(component.hidePane).not.toHaveBeenCalled();
     expect(component.isConfigValid).toHaveBeenCalled();
@@ -842,6 +846,8 @@ describe('Component: SensorParserConfig', () => {
   }));
 
   it('should handle isConfigValid', async(() => {
+    component.init('bro');
+
     component.isConfigValid();
     expect(component.configValid).toEqual(false);
 
@@ -865,6 +871,8 @@ describe('Component: SensorParserConfig', () => {
   }));
 
   it('should getKafkaStatus', async(() => {
+    component.init('bro');
+
     component.getKafkaStatus();
     expect(component.currentKafkaStatus).toEqual(null);
 
@@ -888,6 +896,8 @@ describe('Component: SensorParserConfig', () => {
   }));
 
   it('should getTransforms', async(() => {
+    component.init('bro');
+
     expect(component.getTransforms()).toEqual('0 Transformations Applied');
 
     component.sensorParserConfig.fieldTransformations.push(
@@ -903,6 +913,8 @@ describe('Component: SensorParserConfig', () => {
   }));
 
   it('should handle onSaveGrokStatement', async(() => {
+    component.init('bro');
+
     component.sensorName = 'squid';
 
     component.onSaveGrokStatement('grok statement');
@@ -927,6 +939,8 @@ describe('Component: SensorParserConfig', () => {
   }));
 
   it('should onSavePatternLabel', async(() => {
+    component.init('bro');
+
     component.onSavePatternLabel('PATTERN_LABEL');
     expect(component.patternLabel).toEqual('PATTERN_LABEL');
     expect(component.sensorParserConfig.parserConfig['patternLabel']).toEqual(
@@ -947,13 +961,15 @@ describe('Component: SensorParserConfig', () => {
   }));
 
   it('should save sensor configuration', async(() => {
+    component.init('new');
+
     let fieldTransformer = Object.assign(new FieldTransformer(), {
       input: [],
       output: ['url_host'],
       transformation: 'MTL',
       config: { url_host: 'TO_LOWER(URL_TO_HOST(url))' }
     });
-    let sensorParserConfigSave: SensorParserConfig = new SensorParserConfig();
+    let sensorParserConfigSave: ParserConfigModel = new ParserConfigModel('new');
     sensorParserConfigSave.sensorTopic = 'squid';
     sensorParserConfigSave.parserClassName =
       'org.apache.metron.parsers.GrokParser';
@@ -1034,6 +1050,8 @@ describe('Component: SensorParserConfig', () => {
   }));
 
   it('should getTransformationCount', async(() => {
+    component.init('new');
+
     let transforms = [
       Object.assign(new FieldTransformer(), {
         input: ['method'],
