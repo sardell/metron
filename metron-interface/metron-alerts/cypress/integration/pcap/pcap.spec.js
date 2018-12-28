@@ -47,7 +47,6 @@ context('PCAP Tab', () => {
   });
 
   afterEach(() => {
-    cy.get('.logout-link').click();
   });
 
   it('checking running jobs on navigating to PCAP tab', () => {
