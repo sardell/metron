@@ -1,0 +1,92 @@
+{
+    "groupedBy": "source:type",
+    "groupResults": [
+        {
+            "key": "yaf",
+            "total": 8250,
+            "score": 0,
+            "groupedBy": "enrichments:geo:ip_dst_addr:country",
+            "groupResults": [
+                {
+                    "key": "US",
+                    "total": 400,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "RU",
+                    "total": 323,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "FR",
+                    "total": 1133,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                }
+            ]
+        },
+        {
+            "key": "snort",
+            "total": 8250,
+            "score": 82500,
+            "groupedBy": "enrichments:geo:ip_dst_addr:country",
+            "groupResults": [
+                {
+                    "key": "US",
+                    "total": 442,
+                    "score": 4420,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "RU",
+                    "total": 336,
+                    "score": 3360,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "FR",
+                    "total": 1123,
+                    "score": 11230,
+                    "groupedBy": null,
+                    "groupResults": null
+                }
+            ]
+        },
+        {
+            "key": "bro",
+            "total": 8250,
+            "score": 0,
+            "groupedBy": "enrichments:geo:ip_dst_addr:country",
+            "groupResults": [
+                {
+                    "key": "US",
+                    "total": 1037,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "RU",
+                    "total": 2131,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "FR",
+                    "total": 1526,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                }
+            ]
+        }
+    ]
+}
