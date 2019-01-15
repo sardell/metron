@@ -1,0 +1,211 @@
+{
+    "groupedBy": "source:type",
+    "groupResults": [
+        {
+            "key": "yaf",
+            "total": 71939,
+            "score": 0,
+            "groupedBy": "ip_dst_addr",
+            "groupResults": [
+                {
+                    "key": "224.0.0.251",
+                    "total": 2,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "204.152.254.221",
+                    "total": 1455,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "192.168.138.158",
+                    "total": 25131,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "192.168.138.2",
+                    "total": 453,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "192.168.66.121",
+                    "total": 17276,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "192.168.66.1",
+                    "total": 12565,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "188.165.164.184",
+                    "total": 276,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "95.163.121.204",
+                    "total": 2765,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "72.34.49.86",
+                    "total": 2131,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "62.75.195.236",
+                    "total": 9885,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                }
+            ]
+        },
+        {
+            "key": "snort",
+            "total": 72264,
+            "score": 722640,
+            "groupedBy": "ip_dst_addr",
+            "groupResults": [
+                {
+                    "key": "204.152.254.221",
+                    "total": 1689,
+                    "score": 16890,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "192.168.138.158",
+                    "total": 24675,
+                    "score": 246750,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "192.168.66.121",
+                    "total": 24972,
+                    "score": 249720,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "192.168.66.1",
+                    "total": 5833,
+                    "score": 58330,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "188.165.164.184",
+                    "total": 273,
+                    "score": 2730,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "95.163.121.204",
+                    "total": 2781,
+                    "score": 27810,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "72.34.49.86",
+                    "total": 2255,
+                    "score": 22550,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "62.75.195.236",
+                    "total": 9786,
+                    "score": 97860,
+                    "groupedBy": null,
+                    "groupResults": null
+                }
+            ]
+        },
+        {
+            "key": "bro",
+            "total": 72255,
+            "score": 0,
+            "groupedBy": "ip_dst_addr",
+            "groupResults": [
+                {
+                    "key": "224.0.0.251",
+                    "total": 6937,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "204.152.254.221",
+                    "total": 4554,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "192.168.138.2",
+                    "total": 8961,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "192.168.66.121",
+                    "total": 14964,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "188.165.164.184",
+                    "total": 1121,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "95.163.121.204",
+                    "total": 19039,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "72.34.49.86",
+                    "total": 4364,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                },
+                {
+                    "key": "62.75.195.236",
+                    "total": 12315,
+                    "score": 0,
+                    "groupedBy": null,
+                    "groupResults": null
+                }
+            ]
+        }
+    ]
+}

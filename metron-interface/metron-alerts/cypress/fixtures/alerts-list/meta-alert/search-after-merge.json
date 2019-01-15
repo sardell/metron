@@ -1,0 +1,35 @@
+{
+    "total": 2,
+    "results": [
+        {
+            "id": "AWgvDo_J2jF2gGPXZyoO",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9af4ac68-5c3d-49bf-972f-3d7ee335a956"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvDhGb2jF2gGPXZyj_",
+            "source": {
+                "source:type": "yaf",
+                "guid": "cf85cad3-af4a-47a9-ab27-461ecd7e51df"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        }
+    ],
+    "facetCounts": {
+        "source:type": {
+            "yaf": 2
+        },
+        "ip_dst_addr": {
+            "224.0.0.251": 2
+        },
+        "enrichments:geo:ip_dst_addr:country": {},
+        "ip_src_addr": {
+            "192.168.66.1": 2
+        }
+    }
+}

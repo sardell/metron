@@ -1,0 +1,68 @@
+{
+    "groupedBy": "ip_dst_addr",
+    "groupResults": [
+        {
+            "key": "204.152.254.221",
+            "total": 1455,
+            "score": 0,
+            "groupedBy": null,
+            "groupResults": null
+        },
+        {
+            "key": "192.168.138.158",
+            "total": 25132,
+            "score": 0,
+            "groupedBy": null,
+            "groupResults": null
+        },
+        {
+            "key": "192.168.138.2",
+            "total": 453,
+            "score": 0,
+            "groupedBy": null,
+            "groupResults": null
+        },
+        {
+            "key": "192.168.66.121",
+            "total": 17276,
+            "score": 0,
+            "groupedBy": null,
+            "groupResults": null
+        },
+        {
+            "key": "192.168.66.1",
+            "total": 12565,
+            "score": 0,
+            "groupedBy": null,
+            "groupResults": null
+        },
+        {
+            "key": "188.165.164.184",
+            "total": 276,
+            "score": 0,
+            "groupedBy": null,
+            "groupResults": null
+        },
+        {
+            "key": "95.163.121.204",
+            "total": 2765,
+            "score": 0,
+            "groupedBy": null,
+            "groupResults": null
+        },
+        {
+            "key": "72.34.49.86",
+            "total": 2131,
+            "score": 0,
+            "groupedBy": null,
+            "groupResults": null
+        },
+        {
+            "key": "62.75.195.236",
+            "total": 9885,
+            "score": 0,
+            "groupedBy": null,
+            "groupResults": null
+        }
+    ]
+}

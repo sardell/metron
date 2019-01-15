@@ -1,0 +1,3095 @@
+{
+    "total": 342,
+    "results": [
+        {
+            "id": "AWgwCY0T2jF2gGPXaPsu",
+            "source": {
+                "source:type": "yaf",
+                "guid": "c272b9a8-e1e1-4883-b4be-967880e679ba"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgwCID82jF2gGPXaPmX",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e4ff9235-fe7b-4aee-b238-409593d3aa52"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgwCFMF2jF2gGPXaPlo",
+            "source": {
+                "source:type": "yaf",
+                "guid": "aa1b6637-8f3e-40cf-93b3-39c19aa639de"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgwBBny2jF2gGPXaPLu",
+            "source": {
+                "source:type": "yaf",
+                "guid": "8c26e4fc-7000-4733-a2c6-efc9d0827aa0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgwAl7a2jF2gGPXaPAW",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a75b9f52-cd40-4ccf-ab5d-a8473edd600d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgwAgEl2jF2gGPXaO-S",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e8128952-7ce0-4d55-af85-cdca0bd66fde"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgwAYxU2jF2gGPXaO7c",
+            "source": {
+                "source:type": "yaf",
+                "guid": "33d6fba4-e54a-4b3f-9cf6-efd108a91d12"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv_zkC2jF2gGPXaOrX",
+            "source": {
+                "source:type": "yaf",
+                "guid": "6d1755d4-0b6f-4329-8c39-5e2aa40c3f67"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv_ONJ2jF2gGPXaObt",
+            "source": {
+                "source:type": "yaf",
+                "guid": "da30ef12-a25d-4013-b6b7-ee5eb5ff1572"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv-FYg2jF2gGPXaN8D",
+            "source": {
+                "source:type": "yaf",
+                "guid": "faf79249-db6b-4286-b000-14dcdffb4670"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv9wYi2jF2gGPXaNzp",
+            "source": {
+                "source:type": "yaf",
+                "guid": "eb3820bb-9d67-43ed-bcfa-e011bd86ba4c"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv9Sax2jF2gGPXaNpy",
+            "source": {
+                "source:type": "yaf",
+                "guid": "1dadd0e4-17da-4d68-851f-64ccdb773b7c"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv9ERM2jF2gGPXaNjn",
+            "source": {
+                "source:type": "yaf",
+                "guid": "7d7e793a-b06d-46b7-ad95-efd359007f4c"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv870c2jF2gGPXaNgH",
+            "source": {
+                "source:type": "yaf",
+                "guid": "75cbffc2-5f7e-4c1c-9508-1384e0c78393"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv87zx2jF2gGPXaNf8",
+            "source": {
+                "source:type": "yaf",
+                "guid": "6bb3b295-959a-4ad1-a09c-df0ec15479db"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv8kC82jF2gGPXaNWO",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e7b0031d-32c3-46f9-82f8-ce3b1a3055e9"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv8dOK2jF2gGPXaNTe",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f649c98b-9f9f-4c15-9dd4-1bc23b9851c0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv8ZB22jF2gGPXaNRK",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e1c191b9-ab11-40f0-aa20-a6173fdf459d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv66Sz2jF2gGPXaMo2",
+            "source": {
+                "source:type": "yaf",
+                "guid": "ec8afe2c-5251-43bb-9710-b785e3fa5e4a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv6r3U2jF2gGPXaMjY",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0d4808f5-c556-4550-a8a4-6910ac77d231"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv6ndf2jF2gGPXaMh-",
+            "source": {
+                "source:type": "yaf",
+                "guid": "5e64860d-fbe9-4dbe-814a-4d9510591740"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv6jhv2jF2gGPXaMgg",
+            "source": {
+                "source:type": "yaf",
+                "guid": "fcfad584-9b46-4cfd-97a3-ae6e1b432a95"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv6fOs2jF2gGPXaMef",
+            "source": {
+                "source:type": "yaf",
+                "guid": "fc5fcfe4-92e6-4023-8d70-e690f429c568"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.09.00"
+        },
+        {
+            "id": "AWgv6IUP2jF2gGPXaMVV",
+            "source": {
+                "source:type": "yaf",
+                "guid": "7c118c00-d0ef-499d-9a1b-642ae182bfa7"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv6HP42jF2gGPXaMUd",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e79f500a-66de-49b2-9044-939799f8359a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv5r3n2jF2gGPXaMIp",
+            "source": {
+                "source:type": "yaf",
+                "guid": "1a27200d-b6e1-46c6-84f8-5a2775ce6244"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv4otw2jF2gGPXaLnm",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f874d03c-b059-4fe8-8635-68f46893f148"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv4Wy72jF2gGPXaLfP",
+            "source": {
+                "source:type": "yaf",
+                "guid": "580da8c2-6384-4a54-8798-f540dd70a0b4"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv34MU2jF2gGPXaLRq",
+            "source": {
+                "source:type": "yaf",
+                "guid": "8fc31266-1c9d-4f0d-aa59-3cbef922ca1c"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv3MpL2jF2gGPXaK-D",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f24ae412-8bc4-456d-a821-bab15c2f611b"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv3C4p2jF2gGPXaK58",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e6deab1b-6054-4744-85ea-49b4f227fbf8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv3FMJ2jF2gGPXaK6g",
+            "source": {
+                "source:type": "yaf",
+                "guid": "484c8cdf-7893-40e9-91aa-bdd5505e8af5"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv2k4w2jF2gGPXaKtS",
+            "source": {
+                "source:type": "yaf",
+                "guid": "87e2a51b-26b9-451c-9cc8-6d437147fa4f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv2ZFF2jF2gGPXaKoM",
+            "source": {
+                "source:type": "yaf",
+                "guid": "aa773401-2748-4c73-8df3-787837149a8d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv2W1u2jF2gGPXaKnf",
+            "source": {
+                "source:type": "yaf",
+                "guid": "5df346be-22c8-4de0-9fbc-5cb8c8f4940e"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv2L_j2jF2gGPXaKjQ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0e9971b3-a43c-4add-a5b3-2e53201c75cb"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv2Hkn2jF2gGPXaKhO",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4b503fe5-cbd9-4ed4-a32b-3652a89e681f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv2Ego2jF2gGPXaKgg",
+            "source": {
+                "source:type": "yaf",
+                "guid": "30b0aa20-725b-424c-81d5-93cbaae803c0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv2Cxb2jF2gGPXaKf6",
+            "source": {
+                "source:type": "yaf",
+                "guid": "5838646e-b474-499e-bdcd-49031a19a35a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv1r6x2jF2gGPXaKWq",
+            "source": {
+                "source:type": "yaf",
+                "guid": "ab60d7d5-ee12-4d45-82b6-cb3a7550c8a0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv1ROi2jF2gGPXaKM4",
+            "source": {
+                "source:type": "yaf",
+                "guid": "100b1a36-0764-4b5d-92a2-5a50e960d17f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv0R912jF2gGPXaJzo",
+            "source": {
+                "source:type": "yaf",
+                "guid": "ceefa945-b46c-415b-a21b-7fbfd978f6da"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgv0Hu02jF2gGPXaJuo",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9b210d3b-1ff9-44c1-ad5f-d7f3216dd554"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvzYcG2jF2gGPXaJZl",
+            "source": {
+                "source:type": "yaf",
+                "guid": "dfea8cbb-d518-424f-9e3f-7f5170886522"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvyv4P2jF2gGPXaJHL",
+            "source": {
+                "source:type": "yaf",
+                "guid": "08257970-f147-47e2-99f1-383a024ae3e7"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvyqpo2jF2gGPXaJFN",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0fdafe8a-f1b9-476c-bc8e-6bfe7ed3dbc8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvyPE72jF2gGPXaI4d",
+            "source": {
+                "source:type": "yaf",
+                "guid": "3bba75f8-4d78-4e15-8416-3c7386bbc110"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvyHwN2jF2gGPXaI0_",
+            "source": {
+                "source:type": "yaf",
+                "guid": "1bbfadd0-1731-41c5-923a-5dbe318e84e8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvxoNc2jF2gGPXaIm2",
+            "source": {
+                "source:type": "yaf",
+                "guid": "d9a560d6-94a1-4a9f-880a-b019facda606"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvxmPY2jF2gGPXaImM",
+            "source": {
+                "source:type": "yaf",
+                "guid": "1616655c-8ed3-43b9-a0da-71de546790be"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvxQTQ2jF2gGPXaIcd",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4e45dc9d-abe6-47ae-8aab-9a54be0834f3"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvxDc12jF2gGPXaIWC",
+            "source": {
+                "source:type": "yaf",
+                "guid": "04b45aa5-d501-424b-b421-504544fba860"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvw28P2jF2gGPXaIQa",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e7c8930a-9d5c-40d8-9549-d9c91644ff3e"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvwpi02jF2gGPXaIK2",
+            "source": {
+                "source:type": "yaf",
+                "guid": "6a8342dc-1e53-4fff-a772-66bb519f45a7"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvwdAn2jF2gGPXaIFR",
+            "source": {
+                "source:type": "yaf",
+                "guid": "7df75b8f-b263-40d4-b1f3-3fb0c3c1ce33"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvv_HF2jF2gGPXaH5P",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b3f75b44-c558-4ad0-b5c4-20bc4f1a62d6"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvv_HQ2jF2gGPXaH5T",
+            "source": {
+                "source:type": "yaf",
+                "guid": "da164f81-427f-4806-842f-e824652dee17"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvvO3m2jF2gGPXaHjg",
+            "source": {
+                "source:type": "yaf",
+                "guid": "04378d5c-e7a6-44c5-abee-f93d60ddc9dd"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvvBVX2jF2gGPXaHdH",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b07e0830-16ec-4584-93f3-7c3c4acbd07a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvvAal2jF2gGPXaHcd",
+            "source": {
+                "source:type": "yaf",
+                "guid": "cc95e015-3b46-4be8-bfb1-08edb596d942"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvufAH2jF2gGPXaHNn",
+            "source": {
+                "source:type": "yaf",
+                "guid": "2838138f-a291-4c77-a447-3c59bbf3e0d5"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvt8px2jF2gGPXaG_p",
+            "source": {
+                "source:type": "yaf",
+                "guid": "93178613-1355-4f61-a441-10a6944ea6fe"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvtnIc2jF2gGPXaG2g",
+            "source": {
+                "source:type": "yaf",
+                "guid": "331df25d-67af-413e-b96f-716e2b36788e"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvtnIJ2jF2gGPXaG2T",
+            "source": {
+                "source:type": "yaf",
+                "guid": "8bb07c34-831f-42bc-ae73-55066b302098"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvtYPn2jF2gGPXaGvy",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e353ad82-7cde-4642-a87f-dde7a8899f57"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvszvB2jF2gGPXaGgd",
+            "source": {
+                "source:type": "yaf",
+                "guid": "5b39b211-a4df-4f6f-ac62-d54bd44483a0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvsrhq2jF2gGPXaGc0",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0ba67dc9-c8c1-4b61-9c63-1b3c1fc06944"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvspHY2jF2gGPXaGcL",
+            "source": {
+                "source:type": "yaf",
+                "guid": "456d9336-bf90-437a-86d1-268696ae4070"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvsha-2jF2gGPXaGYm",
+            "source": {
+                "source:type": "yaf",
+                "guid": "cebbeb05-5aac-4e52-a642-a610133788ff"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.23"
+        },
+        {
+            "id": "AWgvsQkx2jF2gGPXaGRl",
+            "source": {
+                "source:type": "yaf",
+                "guid": "1886c7ac-a7e4-4db1-8a16-a7a7a46dc476"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvsDE-2jF2gGPXaGMA",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b9a7a1ac-65d4-482f-8121-82361e0e6bcf"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvrcRW2jF2gGPXaF7M",
+            "source": {
+                "source:type": "yaf",
+                "guid": "d8f21afa-23a1-4652-bd8a-37e0b1bbcc96"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvrNMs2jF2gGPXaF0A",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0d0accb2-ab87-4450-baa9-7f1a4f2390f1"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvrEJC2jF2gGPXaFv6",
+            "source": {
+                "source:type": "yaf",
+                "guid": "2723c903-d742-4e72-a4cf-f827adc45965"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvqcgp2jF2gGPXaFfB",
+            "source": {
+                "source:type": "yaf",
+                "guid": "33a40fe5-b9ba-441f-ae19-7bbc9cc4d16d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvp6LH2jF2gGPXaFQH",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b1193fd3-26e0-430b-b8fe-f2c82d683a4b"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvpCkz2jF2gGPXaE2I",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f10160fe-88ed-4945-91a0-17ffa319963d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvo_eE2jF2gGPXaE0u",
+            "source": {
+                "source:type": "yaf",
+                "guid": "2b02d0e4-c9d2-40ac-a2fb-12660f1d6cbe"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvojqb2jF2gGPXaEo6",
+            "source": {
+                "source:type": "yaf",
+                "guid": "62df2644-6a38-4d56-844a-73e80485781a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvoJDS2jF2gGPXaEdp",
+            "source": {
+                "source:type": "yaf",
+                "guid": "59a4e257-10b8-4aed-bd1c-de1ddddce3c5"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvnnce2jF2gGPXaEQK",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0c9a442c-bea5-4ede-9eb9-860115aeb911"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvnjXj2jF2gGPXaEO8",
+            "source": {
+                "source:type": "yaf",
+                "guid": "1b8f15a2-dbcd-4db7-ada5-3ee4b73397aa"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvnEPf2jF2gGPXaEBX",
+            "source": {
+                "source:type": "yaf",
+                "guid": "534d4403-973a-4a98-ab5a-fee97d6f686d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvm6JX2jF2gGPXaD9N",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b1a8fe5c-0a66-4876-a9c4-911cb2ee1507"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvmxeK2jF2gGPXaD5t",
+            "source": {
+                "source:type": "yaf",
+                "guid": "dab67b97-f570-4cb4-a149-bdac077647b2"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvmrvG2jF2gGPXaD3k",
+            "source": {
+                "source:type": "yaf",
+                "guid": "1fe04972-23ee-45d8-9202-025d32295852"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvmEKn2jF2gGPXaDmu",
+            "source": {
+                "source:type": "yaf",
+                "guid": "1e396644-3b48-4264-8fcb-f8df3cbb89ad"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvl76F2jF2gGPXaDjT",
+            "source": {
+                "source:type": "yaf",
+                "guid": "c3fb32ac-8e7a-4c47-a181-75114c9ae456"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvlPLc2jF2gGPXaDOy",
+            "source": {
+                "source:type": "yaf",
+                "guid": "c7439dc0-451c-4d81-946c-cd9baa1beb43"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvlHJW2jF2gGPXaDKu",
+            "source": {
+                "source:type": "yaf",
+                "guid": "bbc723c9-08e1-4e40-9b64-ace36586447e"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvlEaW2jF2gGPXaDJJ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f08e39bf-f067-4397-a95e-1d459b2c36f6"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvkdVp2jF2gGPXaC0J",
+            "source": {
+                "source:type": "yaf",
+                "guid": "5b529fd9-78ef-4ea9-bed1-715d07607d84"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvkSdH2jF2gGPXaCtu",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e50b3c6f-dea1-40ea-930a-e435559a6e00"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvkL2j2jF2gGPXaCqP",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b1aea780-cdd9-4ca7-8a93-ffc3f05fd9e2"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvkBvl2jF2gGPXaCkw",
+            "source": {
+                "source:type": "yaf",
+                "guid": "759c8493-9a12-4a69-9474-2d4b7f2eb6c7"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvj-dB2jF2gGPXaCin",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e05a1a78-2ff1-4aca-9a57-7aaa1ea69269"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvj5VR2jF2gGPXaCfp",
+            "source": {
+                "source:type": "yaf",
+                "guid": "970c8f8f-d85e-4ee0-b5d2-9fd0b1d5ef05"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvjogH2jF2gGPXaCWk",
+            "source": {
+                "source:type": "yaf",
+                "guid": "5af3f5c7-a4f7-4da0-9680-80ad72d27275"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvjnq12jF2gGPXaCV7",
+            "source": {
+                "source:type": "yaf",
+                "guid": "64c8a4aa-b7bc-4f11-b61d-8ca780dd7b06"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvituA2jF2gGPXaB1f",
+            "source": {
+                "source:type": "yaf",
+                "guid": "15f384ca-d996-4fbe-8dd9-6f9881034ada"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgviowQ2jF2gGPXaByt",
+            "source": {
+                "source:type": "yaf",
+                "guid": "50f069eb-8ea3-40fc-8ab5-b845deb8626e"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvhOpu2jF2gGPXaBFr",
+            "source": {
+                "source:type": "yaf",
+                "guid": "1753bc0b-1b84-4aad-ac14-6bb8cd998dfb"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvf1Zh2jF2gGPXaAa7",
+            "source": {
+                "source:type": "yaf",
+                "guid": "02620dae-1354-46a3-99bc-5bb4ebc706ac"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvfT4A2jF2gGPXaAQm",
+            "source": {
+                "source:type": "yaf",
+                "guid": "3e703698-f914-478e-b7ce-c2e013ed4bfd"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvfS6d2jF2gGPXaAP4",
+            "source": {
+                "source:type": "yaf",
+                "guid": "022d08df-9477-4fc5-8085-b5d2f83c03e1"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvfJwT2jF2gGPXaALs",
+            "source": {
+                "source:type": "yaf",
+                "guid": "11552921-092f-4935-9068-aa1dd18733a7"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvfC172jF2gGPXaAI4",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9690db11-9cbc-4cbb-be2b-5b171610c776"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.22"
+        },
+        {
+            "id": "AWgvds7c2jF2gGPXZ_k3",
+            "source": {
+                "source:type": "yaf",
+                "guid": "6b1ab6df-49f0-459d-97fd-46487fa1e85d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvdmjT2jF2gGPXZ_iJ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "80a6648d-1db1-4160-88bb-f3fc518023d8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvdI3l2jF2gGPXZ_VY",
+            "source": {
+                "source:type": "yaf",
+                "guid": "ff7e1e5b-ab03-4980-9126-3c35b8c5a975"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvc-MM2jF2gGPXZ_Qi",
+            "source": {
+                "source:type": "yaf",
+                "guid": "8f782675-82e9-47d5-9dc8-e05c405384a0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvctj_2jF2gGPXZ_Jk",
+            "source": {
+                "source:type": "yaf",
+                "guid": "16c79354-c4f9-42f0-b12f-626c602a46a8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvcfD72jF2gGPXZ_DM",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0eb17e61-22a5-445e-ae80-c140cdd6dc90"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvccHD2jF2gGPXZ_B3",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b1ede3fe-81b9-4167-b5b4-eda7fb3b316f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvcEMP2jF2gGPXZ-3O",
+            "source": {
+                "source:type": "yaf",
+                "guid": "88a9bcec-64cb-4fd7-9e17-474ba31995b4"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvb4pG2jF2gGPXZ-yR",
+            "source": {
+                "source:type": "yaf",
+                "guid": "152a3142-f29a-4e9f-b0f8-1680fa4abca1"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvav5c2jF2gGPXZ-TZ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "18d03149-bc78-45e0-9873-a702819ba3b7"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvalHy2jF2gGPXZ-OZ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9e7a4916-a871-48a9-b678-38632d4630c5"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvaepd2jF2gGPXZ-Ls",
+            "source": {
+                "source:type": "yaf",
+                "guid": "93d85061-bec9-49c6-804e-c00cb973975a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvaC8t2jF2gGPXZ9_z",
+            "source": {
+                "source:type": "yaf",
+                "guid": "890bf48f-e229-4ca7-ae32-e39158864494"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvZdsL2jF2gGPXZ9u1",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a6103bcd-bc3a-4169-bfae-5f38800d1769"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvYyMG2jF2gGPXZ9ZF",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a766ff03-c480-4cd8-a0f0-8eb44f4f7213"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvYY3e2jF2gGPXZ9Mc",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b47f642c-d4a1-448a-aeba-8c1527156193"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvX_Br2jF2gGPXZ8_u",
+            "source": {
+                "source:type": "yaf",
+                "guid": "2c8009b5-23f4-4aca-8b5a-5aea912f3143"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvX3f82jF2gGPXZ88Q",
+            "source": {
+                "source:type": "yaf",
+                "guid": "2fa43faa-0e32-48cf-9051-a690964a2563"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvXQ0G2jF2gGPXZ8p7",
+            "source": {
+                "source:type": "yaf",
+                "guid": "bc3fddd1-4f01-4f6d-a3bd-2af98cd70111"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvW8sa2jF2gGPXZ8gF",
+            "source": {
+                "source:type": "yaf",
+                "guid": "c50c622b-0a39-449e-ab12-aed823d56853"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvWJBV2jF2gGPXZ8Gx",
+            "source": {
+                "source:type": "yaf",
+                "guid": "836db836-1054-410a-83fd-4105d382d5f3"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvV3C_2jF2gGPXZ79m",
+            "source": {
+                "source:type": "yaf",
+                "guid": "571d9057-7b99-4c7e-a9ae-a9bdecae2824"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvVMHX2jF2gGPXZ7pV",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b151fe1a-387f-4d8f-aa08-5a90f7df76c4"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvVAKG2jF2gGPXZ7jr",
+            "source": {
+                "source:type": "yaf",
+                "guid": "d67e0c53-ceab-48b0-b044-eded92f8a18d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvUk3E2jF2gGPXZ7Xr",
+            "source": {
+                "source:type": "yaf",
+                "guid": "56685d4a-4c4b-4e33-932b-be2d6f298a69"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvUiSo2jF2gGPXZ7XB",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a134ce4f-e255-436a-92c3-f888b01a9b6e"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvT8nC2jF2gGPXZ7G0",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a73969cb-fc33-4126-9595-2f146c026c7a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvTEQS2jF2gGPXZ6vm",
+            "source": {
+                "source:type": "yaf",
+                "guid": "6b83fcee-5777-46f9-88c3-bc94575cb488"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvS9jR2jF2gGPXZ6s4",
+            "source": {
+                "source:type": "yaf",
+                "guid": "11bbbe4a-5b74-47ef-abfc-a5afe9284cd0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvSnrh2jF2gGPXZ6jD",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a4f10a80-4f3f-4cf1-820c-0e26f1e8c7f9"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvSGO22jF2gGPXZ6Ur",
+            "source": {
+                "source:type": "yaf",
+                "guid": "70d7f16d-6d4c-400e-8af4-f238086a56a4"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvR4rE2jF2gGPXZ6O7",
+            "source": {
+                "source:type": "yaf",
+                "guid": "22659d92-bf0f-4387-a56c-1ac527a3e4fe"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvRn-a2jF2gGPXZ6HX",
+            "source": {
+                "source:type": "yaf",
+                "guid": "be9b1343-bfb1-499d-aea0-df05928afbeb"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvRmCl2jF2gGPXZ6Gj",
+            "source": {
+                "source:type": "yaf",
+                "guid": "2552e01b-d7bd-4e1c-a538-e5442a1487be"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvReYS2jF2gGPXZ6DF",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f19f603e-9093-400d-8196-a78fc6e66361"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvRYk92jF2gGPXZ6AX",
+            "source": {
+                "source:type": "yaf",
+                "guid": "d37b4a12-2bff-465c-9464-a7550f223d6b"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvRBUb2jF2gGPXZ52V",
+            "source": {
+                "source:type": "yaf",
+                "guid": "8e5941ac-1bf7-4642-9546-da6e8823a3e9"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.21"
+        },
+        {
+            "id": "AWgvQ27y2jF2gGPXZ5yS",
+            "source": {
+                "source:type": "yaf",
+                "guid": "cdc46e80-a850-4589-b844-d418db27b04b"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvPhTi2jF2gGPXZ5Jg",
+            "source": {
+                "source:type": "yaf",
+                "guid": "47137a57-358d-446c-b1cb-3dc47eed6520"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvOqtx2jF2gGPXZ4sp",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9118b426-ab2d-4e2b-a15e-894c6b312a27"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvOP652jF2gGPXZ4dy",
+            "source": {
+                "source:type": "yaf",
+                "guid": "53c88307-8efa-4c38-96b9-0afc319d8e57"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvN-VF2jF2gGPXZ4UE",
+            "source": {
+                "source:type": "yaf",
+                "guid": "c2c2e2ab-2c35-42b4-808b-69d52af915dd"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvN0S32jF2gGPXZ4OP",
+            "source": {
+                "source:type": "yaf",
+                "guid": "613d6eae-2f56-48ca-ab6d-a3da8af4ae52"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvNoo42jF2gGPXZ4H_",
+            "source": {
+                "source:type": "yaf",
+                "guid": "04aaa7f4-d810-442b-9a34-d433cca94df4"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvNi5y2jF2gGPXZ4Ej",
+            "source": {
+                "source:type": "yaf",
+                "guid": "88342903-5a64-4d92-afff-b6d9b62f8c51"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvNi5y2jF2gGPXZ4Ek",
+            "source": {
+                "source:type": "yaf",
+                "guid": "46ba9a26-e74c-488b-9756-69ced20dc263"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvNNTi2jF2gGPXZ34m",
+            "source": {
+                "source:type": "yaf",
+                "guid": "3251737b-c727-41e0-92d8-650d21102c4c"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvNJ1X2jF2gGPXZ32i",
+            "source": {
+                "source:type": "yaf",
+                "guid": "5072054c-f7fb-4b71-8e93-fe1c2735f4d3"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvM9dS2jF2gGPXZ3va",
+            "source": {
+                "source:type": "yaf",
+                "guid": "abf70dfe-42c5-41b6-aaf0-95db37b8c5fd"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvMTQF2jF2gGPXZ3Xb",
+            "source": {
+                "source:type": "yaf",
+                "guid": "bdefdbd7-7b76-4e57-8a63-3e9e42bd432d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvL9jY2jF2gGPXZ3Ll",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0df299b9-ec01-4fce-a59d-8b590057e99f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvL9jR2jF2gGPXZ3Ld",
+            "source": {
+                "source:type": "yaf",
+                "guid": "8c8fb231-4146-47d9-bc97-817d3abe6434"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvL6RE2jF2gGPXZ3JX",
+            "source": {
+                "source:type": "yaf",
+                "guid": "eea42768-f614-45b8-a952-4fa667e04802"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvLe412jF2gGPXZ26C",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b65e6278-e1ba-4c3d-93bd-cc9e82e1e15a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvLdPx2jF2gGPXZ25L",
+            "source": {
+                "source:type": "yaf",
+                "guid": "910c32e0-f078-40f9-add7-65a8b5957e09"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvLTHz2jF2gGPXZ2zj",
+            "source": {
+                "source:type": "yaf",
+                "guid": "90435976-d1f7-4be6-8c81-506cd988f592"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvLLsD2jF2gGPXZ2vU",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9c91a50d-81f3-4889-837b-22059cedb9b8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvLIQJ2jF2gGPXZ2tU",
+            "source": {
+                "source:type": "yaf",
+                "guid": "25b150e8-cb12-4064-97dc-1c6dd098d769"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvKTYu2jF2gGPXZ2Ps",
+            "source": {
+                "source:type": "yaf",
+                "guid": "ed6b4780-85d2-41e9-a79a-092a6c0020d1"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvKEVr2jF2gGPXZ2HX",
+            "source": {
+                "source:type": "yaf",
+                "guid": "07f6fe86-d906-4f12-94cd-4fc8feac023a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvJzXo2jF2gGPXZ1-L",
+            "source": {
+                "source:type": "yaf",
+                "guid": "61c46259-ebd5-48ce-9693-8095d541dabe"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvJoW82jF2gGPXZ137",
+            "source": {
+                "source:type": "yaf",
+                "guid": "90aa437d-6f30-4ccc-92a5-354f8165bbf9"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvJZPK2jF2gGPXZ1va",
+            "source": {
+                "source:type": "yaf",
+                "guid": "6e31dfd0-139e-454f-8008-b9f6a16b8607"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvJHhf2jF2gGPXZ1lh",
+            "source": {
+                "source:type": "yaf",
+                "guid": "7d088c42-fe75-450d-a9c2-58781dd144c0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvIdYe2jF2gGPXZ1OS",
+            "source": {
+                "source:type": "yaf",
+                "guid": "011da219-f1eb-4d50-90e5-38b018527007"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvIFr-2jF2gGPXZ1A8",
+            "source": {
+                "source:type": "yaf",
+                "guid": "633d8dd5-b4e3-4faa-aea7-fb9a399c3e16"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvIBhD2jF2gGPXZ0_A",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9d883dd8-9761-4aa9-9727-8445341d8df0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvHkQ_2jF2gGPXZ0u1",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f259d5da-5560-435e-91a7-b4c80df2e4a0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvGqkz2jF2gGPXZ0Qo",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a046c05d-7b14-4508-b451-bedd1c84a1f5"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvGpvC2jF2gGPXZ0Pv",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b3f2a81f-f83a-4a92-b58e-a364e6c2b9ab"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvGnLw2jF2gGPXZ0Of",
+            "source": {
+                "source:type": "yaf",
+                "guid": "7ae3a7a3-214e-4c5c-81b9-8e2f2b878105"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvF6ph2jF2gGPXZz2k",
+            "source": {
+                "source:type": "yaf",
+                "guid": "5b2c6951-ad33-40d4-a1bc-27b6baf669cf"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvF39N2jF2gGPXZz1L",
+            "source": {
+                "source:type": "yaf",
+                "guid": "941a474b-b483-4b82-bc4b-8d2d2b195ac0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvFrwP2jF2gGPXZzu1",
+            "source": {
+                "source:type": "yaf",
+                "guid": "5b433b70-1768-4bf0-ad95-27cb3fb3ad94"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvFWZb2jF2gGPXZzje",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e24c422b-852b-4319-aadd-50da280aea05"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvFRHo2jF2gGPXZzgp",
+            "source": {
+                "source:type": "yaf",
+                "guid": "bf9a6633-3e2e-4b90-a7db-02e74c4659ef"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvEukk2jF2gGPXZzNn",
+            "source": {
+                "source:type": "yaf",
+                "guid": "dcd9753b-0c40-4def-a962-9fa057508d1d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvEr7X2jF2gGPXZzMX",
+            "source": {
+                "source:type": "yaf",
+                "guid": "53553c0a-bd89-4594-b910-75ce61a5f578"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvDo_J2jF2gGPXZyoO",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9af4ac68-5c3d-49bf-972f-3d7ee335a956"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvDiyo2jF2gGPXZyko",
+            "source": {
+                "source:type": "yaf",
+                "guid": "fae96d84-7796-4d73-9ad0-cb1e080746ff"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvDhGb2jF2gGPXZyj_",
+            "source": {
+                "source:type": "yaf",
+                "guid": "cf85cad3-af4a-47a9-ab27-461ecd7e51df"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.20"
+        },
+        {
+            "id": "AWgvDLPY2jF2gGPXZyYE",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0a6fc98e-d3ca-4260-9003-2e5e7be245bf"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvCPl52jF2gGPXZx3p",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a330aba6-4d4e-4876-8fca-e579207d7406"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvCGLz2jF2gGPXZxyt",
+            "source": {
+                "source:type": "yaf",
+                "guid": "2f4e0580-016f-4ea1-89e0-07d5c61fb6c5"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvCFW92jF2gGPXZxyF",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4e54b05e-aece-4848-ad45-355d2b4dd8f8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvB-iC2jF2gGPXZxug",
+            "source": {
+                "source:type": "yaf",
+                "guid": "375ade97-5f66-4f51-86ef-c0ccd4bece69"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvB5YO2jF2gGPXZxrt",
+            "source": {
+                "source:type": "yaf",
+                "guid": "785c1fa6-913e-4d59-a26f-61d510472548"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvB23N2jF2gGPXZxqS",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b627aebf-7ff4-413b-b6fb-fa9c80367a15"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvB2CC2jF2gGPXZxpq",
+            "source": {
+                "source:type": "yaf",
+                "guid": "240a89bf-e258-49b6-b688-19e494aa8f2d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvBreu2jF2gGPXZxj7",
+            "source": {
+                "source:type": "yaf",
+                "guid": "70081bf6-ab38-4c82-a9aa-f9ad35d8236d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvBIcj2jF2gGPXZxRG",
+            "source": {
+                "source:type": "yaf",
+                "guid": "8429304e-fddf-4e8d-958e-0ec7e3f79c5f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvBAd22jF2gGPXZxMt",
+            "source": {
+                "source:type": "yaf",
+                "guid": "5bf874d9-a409-41da-b742-89f7dbb55d16"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvA2SN2jF2gGPXZxHT",
+            "source": {
+                "source:type": "yaf",
+                "guid": "c1f801fd-f213-4d5b-b65c-2d515a68f5be"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgvAzio2jF2gGPXZxFy",
+            "source": {
+                "source:type": "yaf",
+                "guid": "93f7a60b-35c2-4402-b409-109428a16f00"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu_xiJ2jF2gGPXZwh-",
+            "source": {
+                "source:type": "yaf",
+                "guid": "55353a47-56b4-40eb-9dcc-ed2f149b0074"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu_H612jF2gGPXZwLW",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f160ded9-fda1-4047-89c1-5c8cc79ceeea"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu-1xl2jF2gGPXZwBi",
+            "source": {
+                "source:type": "yaf",
+                "guid": "7eaf23e4-f347-4f7e-a069-383a746ca986"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu-xiz2jF2gGPXZv_c",
+            "source": {
+                "source:type": "yaf",
+                "guid": "287f3b0c-d40e-4a0b-8482-ba6b2ad436bb"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu-JEp2jF2gGPXZvo6",
+            "source": {
+                "source:type": "yaf",
+                "guid": "13f79660-991e-4f7c-a25d-c320cde7ff40"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu-JEp2jF2gGPXZvo3",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b9215741-c433-45e9-90b2-c49fe3f8fa1f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu95wH2jF2gGPXZvgg",
+            "source": {
+                "source:type": "yaf",
+                "guid": "d51f9792-62a8-43fa-bcd3-6f39e783bb2d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu9vb_2jF2gGPXZva1",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0601a63d-4cc3-4ede-b859-5836606da5b6"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu9fUn2jF2gGPXZvRs",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4c47f24e-4fd7-404c-8ad8-3bf53a0932dc"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu9Q8I2jF2gGPXZvJ_",
+            "source": {
+                "source:type": "yaf",
+                "guid": "65ce6b74-a8ed-41db-8664-fcc9200c05e8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu9NoO2jF2gGPXZvH9",
+            "source": {
+                "source:type": "yaf",
+                "guid": "69623b68-bff2-47f4-a883-f8da3574aa6e"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu9Gw72jF2gGPXZvEf",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9ba7f0d2-e28e-46e0-bfb0-017cb0a6054b"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu8sWf2jF2gGPXZu1v",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a35674b8-18db-48fa-93b0-087a4a200845"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu8qqS2jF2gGPXZu1C",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a0f466f2-5651-458f-a9d5-be766f8c7ce8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu8fqZ2jF2gGPXZuuh",
+            "source": {
+                "source:type": "yaf",
+                "guid": "42cec3f3-6c26-4de9-9c75-2ba6abc0b988"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu8afW2jF2gGPXZurv",
+            "source": {
+                "source:type": "yaf",
+                "guid": "918d8f4d-bd16-46cd-8243-5f2a2cc23878"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu8Iou2jF2gGPXZuh6",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9c445056-187d-41a6-a2b2-8d14f033b829"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu78iT2jF2gGPXZubi",
+            "source": {
+                "source:type": "yaf",
+                "guid": "09ab5222-5075-4311-87cf-09d40f5e5cc6"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu7VqV2jF2gGPXZuF8",
+            "source": {
+                "source:type": "yaf",
+                "guid": "3ac03601-ee34-48f4-a312-6002933e5a01"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu69Ee2jF2gGPXZt4d",
+            "source": {
+                "source:type": "yaf",
+                "guid": "c5f157d6-19a1-42ff-8fea-b3a192502800"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu6qdu2jF2gGPXZtuA",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9aba7afa-a14a-4523-a4fb-b723c316ea84"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu5bsK2jF2gGPXZtC8",
+            "source": {
+                "source:type": "yaf",
+                "guid": "7f9dc0ab-356e-4dd1-9e3c-f469ad55fdaa"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu5JPs2jF2gGPXZs5P",
+            "source": {
+                "source:type": "yaf",
+                "guid": "914b0c96-d21e-4539-9ad2-b6185eeb5fcd"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu5IXW2jF2gGPXZs4c",
+            "source": {
+                "source:type": "yaf",
+                "guid": "35f4951e-75d6-46b2-a834-e14f1cc91cbd"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu41Yo2jF2gGPXZsvZ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "3e8c7c3b-8405-4635-af04-acf91640402b"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu4gZG2jF2gGPXZsmO",
+            "source": {
+                "source:type": "yaf",
+                "guid": "42244f67-cd4a-43df-bf58-4b17070db3ca"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu35ZB2jF2gGPXZsZC",
+            "source": {
+                "source:type": "yaf",
+                "guid": "cfa7eb2e-1505-4d70-8471-ce977f9c99b0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu3hii2jF2gGPXZsOY",
+            "source": {
+                "source:type": "yaf",
+                "guid": "311d47ba-086f-4956-ae1c-3706b880b9f6"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu3O8i2jF2gGPXZsHQ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "45c25f3d-6886-46a7-90ef-2a11ae251a21"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu3Gsh2jF2gGPXZsD0",
+            "source": {
+                "source:type": "yaf",
+                "guid": "db485f30-a539-4cc2-a4d2-3d3176318344"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu21Vr2jF2gGPXZr8M",
+            "source": {
+                "source:type": "yaf",
+                "guid": "c4bee5f7-362c-480a-9f49-ed50caa1df2e"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu21Vr2jF2gGPXZr8O",
+            "source": {
+                "source:type": "yaf",
+                "guid": "fe569f51-8f80-42c0-8c58-ddbd3d6e072b"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu2mIR2jF2gGPXZr0O",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4e0aef6a-aecd-40ac-b5bd-7e7b9054cb33"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu2lRY2jF2gGPXZrze",
+            "source": {
+                "source:type": "yaf",
+                "guid": "63127188-18f6-4280-9d4d-68beee05c347"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu2g032jF2gGPXZrxS",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e8fdd0c5-f3a2-4ce8-8753-4fe5d3fe1053"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu2bpD2jF2gGPXZrui",
+            "source": {
+                "source:type": "yaf",
+                "guid": "1f8a08e3-eecd-4469-831f-1449085358c3"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.19"
+        },
+        {
+            "id": "AWgu1NOf2jF2gGPXZrHI",
+            "source": {
+                "source:type": "yaf",
+                "guid": "cac3543c-02fa-405c-971e-272384c41af8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgu0cno2jF2gGPXZq0L",
+            "source": {
+                "source:type": "yaf",
+                "guid": "646079a3-3e11-433c-a159-9884d807d618"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguz6cR2jF2gGPXZqjQ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "09e6c797-b383-4f17-ab4a-ab46e57c223f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguzhWW2jF2gGPXZqWC",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9417ec98-38a1-43a0-ba87-ab6686fcc5d4"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguzd0n2jF2gGPXZqT4",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b65ddea1-ad17-427a-8550-482a3086c003"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguzBAm2jF2gGPXZqFN",
+            "source": {
+                "source:type": "yaf",
+                "guid": "54751041-2ac9-4dea-a1e4-5f1c53df22f7"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguyZMy2jF2gGPXZp2j",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a3a30931-2edf-4727-a801-221596f232a2"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguyLEC2jF2gGPXZpwh",
+            "source": {
+                "source:type": "yaf",
+                "guid": "cbe45d60-7328-4908-8b0c-83405b6b9dfc"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguyGnQ2jF2gGPXZpuL",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e54e277c-4ff2-4381-a9dc-5344a5b73d3d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguyD2J2jF2gGPXZpsp",
+            "source": {
+                "source:type": "yaf",
+                "guid": "64041277-6052-443d-b76c-42bb3fb881ef"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgux9Zc2jF2gGPXZppe",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0bf0925f-7879-4f39-9e8f-64fade954b3a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguxj612jF2gGPXZpcz",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9c1fd6e0-d1ce-4c45-b3ca-01563b95983a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguxYxW2jF2gGPXZpXQ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "22a484a5-4072-43cf-9752-0a9a6c16a02d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguwug32jF2gGPXZpCJ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f323f7bd-86fd-4da0-badb-7b7704be3083"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguwDR72jF2gGPXZor9",
+            "source": {
+                "source:type": "yaf",
+                "guid": "ab28b321-ce97-4d7d-8aa2-04d7e2e13d71"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguv4Jq2jF2gGPXZoma",
+            "source": {
+                "source:type": "yaf",
+                "guid": "c89e4250-8777-486b-acfb-09921c449765"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguvy1T2jF2gGPXZojj",
+            "source": {
+                "source:type": "yaf",
+                "guid": "82bfcd75-f706-45ba-8606-759166894916"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguvaJX2jF2gGPXZoYB",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0e30734b-4be2-4daa-bd70-78d81f03bb5a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguvJ9u2jF2gGPXZoP5",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0daf445c-c36c-4ffc-a8d6-f63cdbbd13f9"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguvGLU2jF2gGPXZoOB",
+            "source": {
+                "source:type": "yaf",
+                "guid": "7549db20-9618-432a-ba05-ec6cf67511c3"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguuxNf2jF2gGPXZoDM",
+            "source": {
+                "source:type": "yaf",
+                "guid": "cc6f313a-7760-4fa9-b12f-39e903477ad1"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguuwQL2jF2gGPXZoCt",
+            "source": {
+                "source:type": "yaf",
+                "guid": "c75c40ef-395d-4d1b-abf7-5d10076e4fba"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguuMde2jF2gGPXZnwe",
+            "source": {
+                "source:type": "yaf",
+                "guid": "7762d482-4e81-434f-8210-a02fd4d2cfb8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguuEzt2jF2gGPXZnsS",
+            "source": {
+                "source:type": "yaf",
+                "guid": "1577fede-4591-4817-9401-23858d3ebebf"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgutAs-2jF2gGPXZnIH",
+            "source": {
+                "source:type": "yaf",
+                "guid": "d832248c-e399-4a1d-9762-7d128781953a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgus66X2jF2gGPXZnE2",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9d181ad0-d5b0-44cd-a972-fd41bc24782f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgusYHb2jF2gGPXZmxQ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "cb5ed498-ecdb-4264-89d3-033aac4b5636"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgur6SX2jF2gGPXZmgT",
+            "source": {
+                "source:type": "yaf",
+                "guid": "69fc7408-f267-4735-ae1f-7c12e358d65f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgurwcr2jF2gGPXZma0",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a034bff6-80d1-48e4-88af-47fae22a5fe6"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgurt1v2jF2gGPXZmZY",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9a8f5676-91fd-4325-b095-b2dd7d227fef"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgurhc42jF2gGPXZmSS",
+            "source": {
+                "source:type": "yaf",
+                "guid": "65284bc9-3828-4308-a3c8-d646f59adc87"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgurOFX2jF2gGPXZmHc",
+            "source": {
+                "source:type": "yaf",
+                "guid": "045147f4-a888-449f-ba5f-bd5769c1f11a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgurNRh2jF2gGPXZmHF",
+            "source": {
+                "source:type": "yaf",
+                "guid": "27950a60-5ec9-40c8-a0ae-0774e752c86f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgurNRh2jF2gGPXZmHG",
+            "source": {
+                "source:type": "yaf",
+                "guid": "00d215d1-b99d-4dc4-aa7a-5681d1775c43"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguq6AT2jF2gGPXZl8T",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a3cf763d-15db-45a8-be41-bcf2682d3325"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguq0542jF2gGPXZl5Z",
+            "source": {
+                "source:type": "yaf",
+                "guid": "ff250ee5-6afd-49d7-b32c-280a50f5ac1a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguqv3Q2jF2gGPXZl2p",
+            "source": {
+                "source:type": "yaf",
+                "guid": "aaad08f1-4b6d-4503-97a0-ce52168eab48"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguqVeS2jF2gGPXZloM",
+            "source": {
+                "source:type": "yaf",
+                "guid": "253556e0-7b21-4f23-93b3-deb36ec97d27"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgup_YG2jF2gGPXZlb-",
+            "source": {
+                "source:type": "yaf",
+                "guid": "2becf6e3-6d4e-46cc-8fef-30e238ba3582"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgupgZm2jF2gGPXZlK_",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e922000e-52bc-4699-b0c8-b79eeebca3bf"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgupYmN2jF2gGPXZlG6",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0bb639ba-666c-43f5-a52c-b103f812ed04"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgupJRK2jF2gGPXZk-V",
+            "source": {
+                "source:type": "yaf",
+                "guid": "19b5ff49-a2b4-4f9a-9909-f4163b6c31ed"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguo2zi2jF2gGPXZk0Z",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4f6b2980-d3df-4b70-87fe-e3a68da086bb"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguoubm2jF2gGPXZkvq",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4055899f-a224-4262-aef4-8fe0397e3c84"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguoleO2jF2gGPXZkqh",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f3dd59a3-f112-426c-8539-b4531feb6ad5"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguodBO2jF2gGPXZkls",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0951dfd4-72f1-40dc-acf2-747f9f8fc4d2"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWguodBW2jF2gGPXZkl1",
+            "source": {
+                "source:type": "yaf",
+                "guid": "cd02fd9b-4012-488a-9255-99546dfd5f18"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.18"
+        },
+        {
+            "id": "AWgunfYX2jF2gGPXZkFa",
+            "source": {
+                "source:type": "yaf",
+                "guid": "8253f3fb-a816-4ddb-a93f-e6ca82a9309c"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgunC9C2jF2gGPXZj2e",
+            "source": {
+                "source:type": "yaf",
+                "guid": "2fea15db-2621-4a9a-b2d6-f1f9667fc9ca"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgumxnA2jF2gGPXZjth",
+            "source": {
+                "source:type": "yaf",
+                "guid": "d1e98bc9-a3bf-496b-bae1-d5259e5ca123"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgumZOt2jF2gGPXZjg1",
+            "source": {
+                "source:type": "yaf",
+                "guid": "396421d5-3ec4-44ab-85c2-8e022a79c2f9"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgulqcB2jF2gGPXZjJk",
+            "source": {
+                "source:type": "yaf",
+                "guid": "56b62538-64ee-43cc-8235-8f625ccaab07"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgulTgl2jF2gGPXZi85",
+            "source": {
+                "source:type": "yaf",
+                "guid": "350fd073-de83-4fde-9580-ef63c9f78859"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgulObG2jF2gGPXZi59",
+            "source": {
+                "source:type": "yaf",
+                "guid": "447c518c-58bf-4886-991b-8f309336d4fc"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgulELx2jF2gGPXZi0S",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e75b0ae7-c4bb-49d0-88b0-de9d0e3f7b22"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgukuYe2jF2gGPXZipJ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "70574ac1-73e6-4776-ba86-035cba7e8aa7"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgukgkD2jF2gGPXZiiB",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4fb64893-eadb-4edd-8ab2-e33cc0201ad0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgujx0I2jF2gGPXZiJx",
+            "source": {
+                "source:type": "yaf",
+                "guid": "6504b549-65c8-4b51-afc9-094bb1cd7a8b"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgujxz-2jF2gGPXZiJs",
+            "source": {
+                "source:type": "yaf",
+                "guid": "6cd98dbe-8635-4b4c-9cd5-76f486399638"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgujqbd2jF2gGPXZiF7",
+            "source": {
+                "source:type": "yaf",
+                "guid": "51d4e481-0926-4e2c-a0d0-d42d937eab1b"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWguiwen2jF2gGPXZhoE",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b8a7b0e0-49b7-4975-af05-ea61b58afcc5"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWguicsl2jF2gGPXZhdP",
+            "source": {
+                "source:type": "yaf",
+                "guid": "26143836-963e-4553-9119-f99c03ff7919"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWguiR5l2jF2gGPXZhXJ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f917ffc5-96d8-4bd4-8fc3-767f616a974d"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWguh5GH2jF2gGPXZhI6",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f28ca55e-7239-4fc8-be52-bffb400c7b4b"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWguhz9x2jF2gGPXZhGQ",
+            "source": {
+                "source:type": "yaf",
+                "guid": "ddb85751-7933-41b4-9296-72e909089bae"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWguhKNq2jF2gGPXZgwS",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a91a7464-a159-4169-84b5-b43e63193f48"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgug9E-2jF2gGPXZgpL",
+            "source": {
+                "source:type": "yaf",
+                "guid": "9d41b495-e2d3-424b-88f5-da0b7e47729a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgugU412jF2gGPXZgUI",
+            "source": {
+                "source:type": "yaf",
+                "guid": "b7976cae-945f-4ce6-b687-3f076513cb05"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgugOp02jF2gGPXZgQ3",
+            "source": {
+                "source:type": "yaf",
+                "guid": "f9fd063d-b58a-48cf-9f2f-19ce3c41e049"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgugOp02jF2gGPXZgQ4",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0b37ed3c-ef80-4995-aeed-eec28a99c7f7"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWguf_Ca2jF2gGPXZgJr",
+            "source": {
+                "source:type": "yaf",
+                "guid": "14b855d5-a898-4eec-87eb-1a50afe5bfa0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgufeTE2jF2gGPXZf5R",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4891d8a5-d040-4a5e-8dc2-f746f830f98f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgufbu-2jF2gGPXZf4C",
+            "source": {
+                "source:type": "yaf",
+                "guid": "6b88b913-aeea-41f1-9062-cd253a6973b7"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgufRMY2jF2gGPXZfyS",
+            "source": {
+                "source:type": "yaf",
+                "guid": "d6d8e33d-becd-4703-b972-c8787c54d050"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgue_e52jF2gGPXZfoc",
+            "source": {
+                "source:type": "yaf",
+                "guid": "d582388d-4ba3-43d3-9433-da8a3757c4cb"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgue8JE2jF2gGPXZfmf",
+            "source": {
+                "source:type": "yaf",
+                "guid": "6bcf0da9-aff5-4569-92c8-7c514132f584"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgueL0P2jF2gGPXZfNN",
+            "source": {
+                "source:type": "yaf",
+                "guid": "c80731f2-bdd4-4bf0-8cd3-ceeffdb188c8"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgudxWj2jF2gGPXZe-c",
+            "source": {
+                "source:type": "yaf",
+                "guid": "eb14b42c-1d94-43f0-9929-cbc3c7b79860"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgudbN92jF2gGPXZeyk",
+            "source": {
+                "source:type": "yaf",
+                "guid": "315144af-e8c3-4b2b-b4c2-9bf383ee5f9a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgudGKT2jF2gGPXZenY",
+            "source": {
+                "source:type": "yaf",
+                "guid": "5eb24af0-339e-4356-b9a5-7cebc7e00dae"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgucyDS2jF2gGPXZeb8",
+            "source": {
+                "source:type": "yaf",
+                "guid": "a416a795-8875-4a3c-b956-2ddc6cf10910"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgucpOb2jF2gGPXZeW9",
+            "source": {
+                "source:type": "yaf",
+                "guid": "0e4e7ca9-4162-4258-9e59-b48269b86b4c"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWguceYz2jF2gGPXZeQz",
+            "source": {
+                "source:type": "yaf",
+                "guid": "886f3445-423e-4d84-9a25-a6b108357b6a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgub8Uj2jF2gGPXZd9r",
+            "source": {
+                "source:type": "yaf",
+                "guid": "ce4adc17-02c8-4410-825a-3db4cf1ecc26"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgub3Ep2jF2gGPXZd6x",
+            "source": {
+                "source:type": "yaf",
+                "guid": "66c632f8-4a51-4680-856f-0bf05630f9aa"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgubcJI2jF2gGPXZdrM",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e823280a-888e-4ea8-8a37-212437075629"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgubNRI2jF2gGPXZdi-",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4f874874-0583-4654-a3a8-71ffe4d2d823"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgubNQ42jF2gGPXZdiz",
+            "source": {
+                "source:type": "yaf",
+                "guid": "768a12db-2f75-4869-ba64-161763264ee1"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgubKyQ2jF2gGPXZdhS",
+            "source": {
+                "source:type": "yaf",
+                "guid": "68c6a716-bf7d-48a1-82bf-ff102b57dc60"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWgubBK12jF2gGPXZdbo",
+            "source": {
+                "source:type": "yaf",
+                "guid": "abde9b47-9080-4557-9bc0-549e1a520ff5"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWguafIT2jF2gGPXZdH9",
+            "source": {
+                "source:type": "yaf",
+                "guid": "503b8131-d695-49d6-98d2-ee2cf0b62e3e"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWguaJ0b2jF2gGPXZc8l",
+            "source": {
+                "source:type": "yaf",
+                "guid": "ae82f69f-1ecc-40d6-a8b6-8a5c4de0db4f"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.17"
+        },
+        {
+            "id": "AWguZ3Y42jF2gGPXZcyV",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4b73f610-1eec-48d4-907b-cdb0eedfe074"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguZzF32jF2gGPXZcwC",
+            "source": {
+                "source:type": "yaf",
+                "guid": "bea9dc02-27d4-454f-816b-3e560e8f1fe0"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguZbP62jF2gGPXZci3",
+            "source": {
+                "source:type": "yaf",
+                "guid": "d85a3bc4-598e-4bef-aa69-45ae10a33f35"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguZSEo2jF2gGPXZcdt",
+            "source": {
+                "source:type": "yaf",
+                "guid": "4e129e81-aa18-4797-844b-1619b262417a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguZOxm2jF2gGPXZcb5",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e9b64ee2-83f3-4cac-bf20-e7547513be66"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguZDVf2jF2gGPXZcVU",
+            "source": {
+                "source:type": "yaf",
+                "guid": "ab4d3a1c-2b10-4a19-80a8-648b1d62f75a"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguY4nq2jF2gGPXZcPF",
+            "source": {
+                "source:type": "yaf",
+                "guid": "280db6c9-a5f4-445c-8b07-9807ca1f2fc1"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguY3BC2jF2gGPXZcOT",
+            "source": {
+                "source:type": "yaf",
+                "guid": "8079d499-4ea9-4f70-ba4e-f5ba8ad90f20"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguYjFK2jF2gGPXZcDB",
+            "source": {
+                "source:type": "yaf",
+                "guid": "aea9f5d2-8a48-4d77-b9d5-13924afd3fae"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguYONZ2jF2gGPXZb3w",
+            "source": {
+                "source:type": "yaf",
+                "guid": "128640b6-929f-4d77-ad43-65eb5237c597"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguYDeR2jF2gGPXZbxt",
+            "source": {
+                "source:type": "yaf",
+                "guid": "bffa0aed-84e4-4254-9701-6b965166f41b"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguYBe92jF2gGPXZbws",
+            "source": {
+                "source:type": "yaf",
+                "guid": "fa6451e8-6e59-4bc3-84d7-1f9119beff08"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        },
+        {
+            "id": "AWguX1uC2jF2gGPXZbrE",
+            "source": {
+                "source:type": "yaf",
+                "guid": "e80559e2-c4c0-4565-9107-203a07eea567"
+            },
+            "score": 1,
+            "index": "yaf_index_2019.01.08.16"
+        }
+    ],
+    "facetCounts": {
+        "source:type": {
+            "yaf": 342
+        },
+        "ip_dst_addr": {
+            "224.0.0.251": 342
+        },
+        "enrichments:geo:ip_dst_addr:country": {},
+        "ip_src_addr": {
+            "192.168.66.1": 342
+        }
+    }
+}

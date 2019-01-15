@@ -1,0 +1,26 @@
+{
+    "groupedBy": "source:type",
+    "groupResults": [
+        {
+            "key": "yaf",
+            "total": 71939,
+            "score": 0,
+            "groupedBy": null,
+            "groupResults": null
+        },
+        {
+            "key": "snort",
+            "total": 72264,
+            "score": 722640,
+            "groupedBy": null,
+            "groupResults": null
+        },
+        {
+            "key": "bro",
+            "total": 72255,
+            "score": 0,
+            "groupedBy": null,
+            "groupResults": null
+        }
+    ]
+}

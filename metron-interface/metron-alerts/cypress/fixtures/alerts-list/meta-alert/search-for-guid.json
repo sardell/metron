@@ -1,0 +1,121 @@
+{
+    "total": 1,
+    "results": [
+        {
+            "id": "AWg8szh6569OBgGeFahf",
+            "source": {
+                "average": 0,
+                "max": "-Infinity",
+                "metron_alert": [
+                    {
+                        "iflags": 0,
+                        "ip_dst_port": 5353,
+                        "uflags": 0,
+                        "isn": 0,
+                        "adapter:geoadapter:begin:ts": "1546977706459",
+                        "duration": "0.000",
+                        "parallelenricher:enrich:end:ts": "1546977706462",
+                        "protocol": "UDP",
+                        "rpkt": 0,
+                        "source:type": "yaf",
+                        "adapter:threatinteladapter:end:ts": "1546977706462",
+                        "ip_dst_addr": "224.0.0.251",
+                        "original_string": "2019-01-08 20:01:41.000|2019-01-08 20:01:41.000|   0.000|   0.000| 17|                            192.168.66.1| 5353|                             224.0.0.251| 5353|       0|       0|       0|       0|00000000|00000000|000|000|       1|      68|       0|       0|    0|idle ",
+                        "adapter:hostfromjsonlistadapter:end:ts": "1546977706459",
+                        "pkt": 1,
+                        "ruflags": 0,
+                        "adapter:geoadapter:end:ts": "1546977706459",
+                        "roct": 0,
+                        "tag": 0,
+                        "ip_src_addr": "192.168.66.1",
+                        "rtag": 0,
+                        "timestamp": 1546977701000,
+                        "app": 0,
+                        "oct": 68,
+                        "end_reason": "idle ",
+                        "parallelenricher:enrich:begin:ts": "1546977706462",
+                        "risn": 0,
+                        "end_time": 1546977701000,
+                        "adapter:hostfromjsonlistadapter:begin:ts": "1546977706459",
+                        "metaalerts": [
+                            "4218a368-f19a-4dc6-ad7b-f7d3bf33520f"
+                        ],
+                        "parallelenricher:splitter:begin:ts": "1546977706462",
+                        "start_time": 1546977701000,
+                        "riflags": 0,
+                        "rtt": "0.000",
+                        "ip_src_port": 5353,
+                        "parallelenricher:splitter:end:ts": "1546977706462",
+                        "adapter:threatinteladapter:begin:ts": "1546977706462",
+                        "guid": "9af4ac68-5c3d-49bf-972f-3d7ee335a956"
+                    },
+                    {
+                        "iflags": 0,
+                        "ip_dst_port": 5353,
+                        "uflags": 0,
+                        "isn": 0,
+                        "adapter:geoadapter:begin:ts": "1546977674276",
+                        "duration": "0.000",
+                        "parallelenricher:enrich:end:ts": "1546977674283",
+                        "protocol": "UDP",
+                        "rpkt": 0,
+                        "source:type": "yaf",
+                        "adapter:threatinteladapter:end:ts": "1546977674282",
+                        "ip_dst_addr": "224.0.0.251",
+                        "original_string": "2019-01-08 20:01:09.000|2019-01-08 20:01:09.000|   0.000|   0.000| 17|                            192.168.66.1| 5353|                             224.0.0.251| 5353|       0|       0|       0|       0|00000000|00000000|000|000|       1|      68|       0|       0|    0|idle ",
+                        "adapter:hostfromjsonlistadapter:end:ts": "1546977674276",
+                        "pkt": 1,
+                        "ruflags": 0,
+                        "adapter:geoadapter:end:ts": "1546977674276",
+                        "roct": 0,
+                        "tag": 0,
+                        "ip_src_addr": "192.168.66.1",
+                        "rtag": 0,
+                        "timestamp": 1546977669000,
+                        "app": 0,
+                        "oct": 68,
+                        "end_reason": "idle ",
+                        "parallelenricher:enrich:begin:ts": "1546977674281",
+                        "risn": 0,
+                        "end_time": 1546977669000,
+                        "adapter:hostfromjsonlistadapter:begin:ts": "1546977674276",
+                        "metaalerts": [
+                            "4218a368-f19a-4dc6-ad7b-f7d3bf33520f"
+                        ],
+                        "parallelenricher:splitter:begin:ts": "1546977674281",
+                        "start_time": 1546977669000,
+                        "riflags": 0,
+                        "rtt": "0.000",
+                        "ip_src_port": 5353,
+                        "parallelenricher:splitter:end:ts": "1546977674281",
+                        "adapter:threatinteladapter:begin:ts": "1546977674281",
+                        "guid": "cf85cad3-af4a-47a9-ab27-461ecd7e51df"
+                    }
+                ],
+                "threat:triage:score": 0,
+                "count": 0,
+                "groups": [
+                    "source:type",
+                    "ip_dst_addr"
+                ],
+                "sum": 0,
+                "source:type": "metaalert",
+                "min": "Infinity",
+                "median": "NaN",
+                "guid": "4218a368-f19a-4dc6-ad7b-f7d3bf33520f",
+                "timestamp": 1547206604793,
+                "status": "active"
+            },
+            "score": 1,
+            "index": "metaalert_index"
+        }
+    ],
+    "facetCounts": {
+        "source:type": {
+            "metaalert": 1
+        },
+        "ip_dst_addr": {},
+        "enrichments:geo:ip_dst_addr:country": {},
+        "ip_src_addr": {}
+    }
+}
