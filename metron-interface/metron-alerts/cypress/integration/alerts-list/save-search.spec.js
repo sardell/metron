@@ -62,6 +62,7 @@ context('Alerts list: save search', () => {
     cy.get('.btn-search-clear').click();
     cy.get('.ace_line').should('have.text', '*');
     cy.get('.col-form-label-lg').should('have.text', ' Alerts (104593) ');
+    cy.wait(1000);
     cy.contains('table tr td a', 'FR').click();
     cy.get('.ace_line').should('have.text', 'enrichments:geo:ip_dst_addr:country:FR');
 
