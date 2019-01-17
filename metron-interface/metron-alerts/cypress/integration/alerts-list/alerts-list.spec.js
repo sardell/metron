@@ -197,7 +197,7 @@ context('Alerts list', () => {
 
   it('should have all time-range controls', () => {
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(1000).then(() => {
       const ranges = [];
       cy.get('app-time-range .title').each(el => {
         ranges.push(el.text().trim());
@@ -230,49 +230,49 @@ context('Alerts list', () => {
 
   it('should have all time range values populated - 1', () => {
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(1000).then(() => {
       cy.get('#last-7-days').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 7 days');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(1500).then(() => {
       cy.get('#last-30-days').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 30 days');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(2000).then(() => {
       cy.get('#last-60-days').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 60 days');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(2500).then(() => {
       cy.get('#last-90-days').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 90 days');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(3000).then(() => {
       cy.get('#last-1-year').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 1 year');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(3500).then(() => {
       cy.get('#last-2-years').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 2 years');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(4000).then(() => {
       cy.get('#last-5-years').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 5 years');
@@ -282,28 +282,28 @@ context('Alerts list', () => {
 
   it('should have all time range values populated - 2', () => {
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(1000).then(() => {
       cy.get('#yesterday').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Yesterday');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(1000).then(() => {
       cy.get('#day-before-yesterday').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Day before yesterday');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(1500).then(() => {
       cy.get('#this-day-last-week').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('This day last week');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(2000).then(() => {
       cy.get('#previous-week').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Previous week');
@@ -313,14 +313,14 @@ context('Alerts list', () => {
 
   it('should have all time range values populated - 3', () => {
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(2500).then(() => {
       cy.get('#today').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Today');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(3000).then(() => {
       cy.get('#this-week').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('This week');
@@ -330,56 +330,56 @@ context('Alerts list', () => {
 
   it('should have all time range values populated - 4', () => {
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(1000).then(() => {
       cy.get('#last-5-minutes').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 5 minutes');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(1500).then(() => {
       cy.get('#last-15-minutes').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 15 minutes');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(2000).then(() => {
       cy.get('#last-30-minutes').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 30 minutes');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(2500).then(() => {
       cy.get('#last-1-hour').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 1 hour');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(3000).then(() => {
       cy.get('#last-3-hours').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 3 hours');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(3500).then(() => {
       cy.get('#last-6-hours').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 6 hours');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(4000).then(() => {
       cy.get('#last-12-hours').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 12 hours');
       });
     });
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(4500).then(() => {
       cy.get('#last-24-hours').click();
       cy.get('app-time-range button span').eq(0).invoke('text').should(text => {
         expect(text.trim()).to.equal('Last 24 hours');
@@ -435,7 +435,7 @@ context('Alerts list', () => {
 
   it('should have now included when to date is empty', () => {
     cy.get('app-time-range button.btn-search').click();
-    cy.wait(500).then(() => {
+    cy.wait(1000).then(() => {
       cy.get('app-time-range .calendar').eq(0).click();
       cy.get('.pika-select.pika-select-hour').eq(0).select('23').wait(50);
       cy.get('.pika-select.pika-select-minute').eq(0).select('29').wait(50);
