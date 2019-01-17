@@ -20,14 +20,18 @@ context('Alerts list: save search', () => {
 
   beforeEach(() => {
     cy.server();
+    cy.route('GET', '/assets/app-config.json', {
+      'apiRoot': '/api/v1',
+      'loginPath': '/login'
+    }).as('appConfig');
     cy.route({
       method: 'GET',
       url: '/api/v1/user',
       response: 'user'
-    });
+    }).as('user');
     cy.route({
       method: 'POST',
-      url: 'logout',
+      url: '/api/v1/logout',
       response: []
     });
 
@@ -35,9 +39,11 @@ context('Alerts list: save search', () => {
     cy.route('POST', 'search', 'fixture:search.json');
 
     cy.visit('login');
-    cy.get('[name="user"]').type('user');
-    cy.get('[name="password"]').type('password');
-    cy.contains('LOG IN').click();
+    cy.wait(['@appConfig', '@user']).then(() => {
+      cy.get('[name="user"]').type('user');
+      cy.get('[name="password"]').type('password');
+      cy.contains('LOG IN').click();
+    });
   });
 
   it('should display all the default values for saved searches', () => {
@@ -72,8 +78,6 @@ context('Alerts list: save search', () => {
   });
 
   it('should delete first search items from search box having multiple search fields', () => {
-    const force = { force: true }; // force -> true bcoz it's hidden
-
     cy.get('.btn-search-clear').click();
     cy.get('.ace_line').should('have.text', '*');
     cy.get('.col-form-label-lg').should('have.text', ' Alerts (104593) ');

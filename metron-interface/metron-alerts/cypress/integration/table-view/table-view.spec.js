@@ -20,27 +20,30 @@ context('Alert Table View', () => {
 
   beforeEach(() => {
     cy.server();
+    cy.route('GET', '/assets/app-config.json', {
+      'apiRoot': '/api/v1',
+      'loginPath': '/login'
+    }).as('appConfig');
     cy.route({
       method: 'GET',
       url: '/api/v1/user',
       response: 'user'
-    });
+    }).as('user');
     cy.route({
-        method: 'POST',
-        url: '/api/v1/logout',
-        response: []
+      method: 'POST',
+      url: '/api/v1/logout',
+      response: []
     });
 
     cy.route('GET', '/api/v1/global/config', 'fixture:config.json');
     cy.route('POST', 'search', 'fixture:search.json').as('searchRequest');
 
     cy.visit('login');
-    cy.get('[name="user"]').type('user');
-    cy.get('[name="password"]').type('password');
-    cy.contains('LOG IN').click();
-  });
-
-  afterEach(() => {
+    cy.wait(['@appConfig', '@user']).then(() => {
+      cy.get('[name="user"]').type('user');
+      cy.get('[name="password"]').type('password');
+      cy.contains('LOG IN').click();
+    });
   });
 
   it('sorting by timestamp column ASC', () => {
