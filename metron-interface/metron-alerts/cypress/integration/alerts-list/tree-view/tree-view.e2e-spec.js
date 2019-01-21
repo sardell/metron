@@ -81,47 +81,46 @@ describe('Test spec for tree view', function() {
       cy.get('[data-name="alerts_ui_e2e"] [data-qe-id="group-name"]').contains('alerts_ui_e2e');
       cy.get('[data-name="alerts_ui_e2e"] [data-qe-id="group-total"]').contains('1,476');
 
-      // force: true must be used because polling sometimes refreshes the view, which replaces the
-      // element that cypress found in the DOM with a new element
-      cy.get('[data-name="alerts_ui_e2e"]').click( { force: true } );
-      cy.wait('@subgroup').then(() => {
-        cy.get('[data-name="US"] [data-qe-id="subgroup-score"]').contains('0');
-        cy.get('[data-name="US"] [data-qe-id="subgroup-name-total"]').contains('US (91)');
+      cy.get('[data-name="alerts_ui_e2e"]').click();
 
-        cy.get('[data-name="RU"] [data-qe-id="subgroup-score"]').contains('0');
-        cy.get('[data-name="RU"] [data-qe-id="subgroup-name-total"]').contains('RU (72)');
+      cy.wait('@subgroup');
+      cy.wait(1000);
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="US"] [data-qe-id="subgroup-score"]').invoke('text').should(t => expect(t.trim()).to.equal('0'));
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="US"] [data-qe-id="subgroup-name-total"]').invoke('text').should(t => expect(t.trim()).to.equal('US (91)'));
 
-        cy.get('[data-name="FR"] [data-qe-id="subgroup-score"]').contains('0');
-        cy.get('[data-name="FR"] [data-qe-id="subgroup-name-total"]').contains('FR (203)');
-      });
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="RU"] [data-qe-id="subgroup-score"]').invoke('text').should(t => expect(t.trim()).to.equal('0'));
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="RU"] [data-qe-id="subgroup-name-total"]').invoke('text').should(t => expect(t.trim()).to.equal('RU (72)'));
+
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="FR"] [data-qe-id="subgroup-score"]').invoke('text').should(t => expect(t.trim()).to.equal('0'));
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="FR"] [data-qe-id="subgroup-name-total"]').invoke('text').should(t => expect(t.trim()).to.equal('FR (203)'));
 
       cy.route('POST', '/api/v1/search/search', 'fixture:search.json').as('reorder');
       cy.route('POST', '/api/v1/search/group', 'fixture:alerts-list/tree-view/search-group-enrichments.json');
       dragAndDropDragula('source:type', 'ip_src_addr');
 
-      cy.wait('@reorder').then(() => {
-        cy.get('[data-name="US"] [data-qe-id="group-score"]').contains('590');
-        cy.get('[data-name="US"] [data-qe-id="group-name"]').contains('US');
-        cy.get('[data-name="US"] [data-qe-id="group-total"]').contains('346');
+      cy.wait(['@reorder', '@subgroup']);
+      cy.wait(1000);
+      cy.get('[data-name="US"] [data-qe-id="group-score"]').invoke('text').should(t => expect(t.trim()).to.equal('590'));
+      cy.get('[data-name="US"] [data-qe-id="group-name"]').invoke('text').should(t => expect(t.trim()).to.equal('US'));
+      cy.get('[data-name="US"] [data-qe-id="group-total"]').invoke('text').should(t => expect(t.trim()).to.equal('346'));
 
-        cy.get('[data-name="RU"] [data-qe-id="group-score"]').contains('540');
-        cy.get('[data-name="RU"] [data-qe-id="group-name"]').contains('RU');
-        cy.get('[data-name="RU"] [data-qe-id="group-total"]').contains('544');
+      cy.get('[data-name="RU"] [data-qe-id="group-score"]').invoke('text').should(t => expect(t.trim()).to.equal('540'));
+      cy.get('[data-name="RU"] [data-qe-id="group-name"]').invoke('text').should(t => expect(t.trim()).to.equal('RU'));
+      cy.get('[data-name="RU"] [data-qe-id="group-total"]').invoke('text').should(t => expect(t.trim()).to.equal('544'));
 
-        cy.get('[data-name="FR"] [data-qe-id="group-score"]').contains('999');
-        cy.get('[data-name="FR"] [data-qe-id="group-name"]').contains('FR');
-        cy.get('[data-name="FR"] [data-qe-id="group-total"]').contains('636');
-        cy.get('[data-name="US"]').click();
+      cy.get('[data-name="FR"] [data-qe-id="group-score"]').invoke('text').should(t => expect(t.trim()).to.equal('999+'));
+      cy.get('[data-name="FR"] [data-qe-id="group-name"]').invoke('text').should(t => expect(t.trim()).to.equal('FR'));
+      cy.get('[data-name="FR"] [data-qe-id="group-total"]').invoke('text').should(t => expect(t.trim()).to.equal('636'));
+      cy.get('[data-name="US"]').click();
 
-        cy.get('[data-name="alerts_ui_e2e"] [data-qe-id="subgroup-score"]').contains('0');
-        cy.get('[data-name="alerts_ui_e2e"] [data-qe-id="subgroup-name-total"]').contains('alerts_ui_e2e (91)');
+      cy.get('[data-name="US"] [data-name="alerts_ui_e2e"] [data-qe-id="subgroup-score"]').invoke('text').should(t => expect(t.trim()).to.equal('0'));
+      cy.get('[data-name="US"] [data-name="alerts_ui_e2e"] [data-qe-id="subgroup-name-total"]').invoke('text').should(t => expect(t.trim()).to.equal('alerts_ui_e2e (91)'));
 
-        cy.get('[data-name="snort"] [data-qe-id="subgroup-score"]').contains('590');
-        cy.get('[data-name="snort"] [data-qe-id="subgroup-name-total"]').contains('snort (59)');
+      cy.get('[data-name="US"] [data-name="snort"] [data-qe-id="subgroup-score"]').invoke('text').should(t => expect(t.trim()).to.equal('590'));
+      cy.get('[data-name="US"] [data-name="snort"] [data-qe-id="subgroup-name-total"]').invoke('text').should(t => expect(t.trim()).to.equal('snort (59)'));
 
-        cy.get('[data-name="bro"] [data-qe-id="subgroup-score"]').contains('0');
-        cy.get('[data-name="bro"] [data-qe-id="subgroup-name-total"]').contains('bro (196)');
-      });
+      cy.get('[data-name="US"] [data-name="bro"] [data-qe-id="subgroup-score"]').invoke('text').should(t => expect(t.trim()).to.equal('0'));
+      cy.get('[data-name="US"] [data-name="bro"] [data-qe-id="subgroup-name-total"]').invoke('text').should(t => expect(t.trim()).to.equal('bro (196)'));
     });
 
     it('should have group details for single group by', () => {
@@ -136,25 +135,25 @@ describe('Test spec for tree view', function() {
         cy.get('[data-name="alerts_ui_e2e"]').click();
 
         cy.wait('@s1').then(() => {
-          cy.get('tr:first-of-type [data-name="guid"]').contains('68cba12e-0...ab95a9b8d7');
-          cy.get('tr:first-of-type [data-name="timestamp"]').contains('2019-01-14 16:42:55');
-          cy.get('tr:first-of-type [data-name="source:type"]').contains('alerts_ui_e2e');
-          cy.get('tr:first-of-type [data-name="ip_src_addr"]').contains('192.168.66.121');
-          cy.get('tr:first-of-type [data-name="ip_dst_addr"]').contains('192.168.66.1');
-          cy.get('tr:first-of-type [data-name="enrichments:geo:ip_dst_addr:country"]').contains('US');
-          cy.get('tr:first-of-type [data-name="alert_status"]').contains('NEW');
+          cy.get('tr:first-of-type [data-name="guid"]').invoke('text').should(t => expect(t.trim()).to.equal('68cba12e-0...ab95a9b8d7'));
+          cy.get('tr:first-of-type [data-name="timestamp"]').invoke('text').should(t => expect(t.trim()).to.equal('2019-01-14 16:42:55'));
+          cy.get('tr:first-of-type [data-name="source:type"]').invoke('text').should(t => expect(t.trim()).to.equal('alerts_ui_e2e'));
+          cy.get('tr:first-of-type [data-name="ip_src_addr"]').invoke('text').should(t => expect(t.trim()).to.equal('192.168.66.121'));
+          cy.get('tr:first-of-type [data-name="ip_dst_addr"]').invoke('text').should(t => expect(t.trim()).to.equal('192.168.66.1'));
+          cy.get('tr:first-of-type [data-name="enrichments:geo:ip_dst_addr:country"]').invoke('text').should(t => expect(t.trim()).to.equal('US'));
+          cy.get('tr:first-of-type [data-name="alert_status"]').invoke('text').should(t => expect(t.trim()).to.equal('NEW'));
         });
 
         cy.route('POST', '**/api/v1/search/search', 'fixture:alerts-list/tree-view/search-group-yaf-page2.json').as('singleGroupPage2');
         cy.get('metron-table-pagination .fa-chevron-right').click();
         cy.wait('@singleGroupPage2').then(() => {
-          cy.get('tr:first-of-type [data-name="guid"]').contains('9bcd672e-1...505f82f549');
-          cy.get('tr:first-of-type [data-name="timestamp"]').contains('2019-01-14 16:44:49');
-          cy.get('tr:first-of-type [data-name="source:type"]').contains('alerts_ui_e2e');
-          cy.get('tr:first-of-type [data-name="ip_src_addr"]').contains('204.152.254.221');
-          cy.get('tr:first-of-type [data-name="ip_dst_addr"]').contains('192.168.138.158');
-          cy.get('tr:first-of-type [data-name="enrichments:geo:ip_dst_addr:country"]').contains('US');
-          cy.get('tr:first-of-type [data-name="alert_status"]').contains('NEW');
+          cy.get('tr:first-of-type [data-name="guid"]').invoke('text').should(t => expect(t.trim()).to.equal('9bcd672e-1...505f82f549'));
+          cy.get('tr:first-of-type [data-name="timestamp"]').invoke('text').should(t => expect(t.trim()).to.equal('2019-01-14 16:44:49'));
+          cy.get('tr:first-of-type [data-name="source:type"]').invoke('text').should(t => expect(t.trim()).to.equal('alerts_ui_e2e'));
+          cy.get('tr:first-of-type [data-name="ip_src_addr"]').invoke('text').should(t => expect(t.trim()).to.equal('204.152.254.221'));
+          cy.get('tr:first-of-type [data-name="ip_dst_addr"]').invoke('text').should(t => expect(t.trim()).to.equal('192.168.138.158'));
+          cy.get('tr:first-of-type [data-name="enrichments:geo:ip_dst_addr:country"]').invoke('text').should(t => expect(t.trim()).to.equal('US'));
+          cy.get('tr:first-of-type [data-name="alert_status"]').invoke('text').should(t => expect(t.trim()).to.equal('NEW'));
         });
 
         cy.get('app-group-by div[data-name="source:type"]').click();
@@ -183,10 +182,10 @@ describe('Test spec for tree view', function() {
       });
 
       // Top Level Group Values should be present for alerts_ui_e2e
-      cy.get('[data-name="alerts_ui_e2e"] .dash-score').contains('0');
-      cy.get('[data-name="alerts_ui_e2e"] .text-light.severity-padding .title').contains('alerts_ui_e2e');
-      cy.get('[data-name="alerts_ui_e2e"] .text-light.two-line .text-dark').contains('ALERTS');
-      cy.get('[data-name="alerts_ui_e2e"] .text-light.two-line .title').contains('1,476');
+      cy.get('[data-name="alerts_ui_e2e"] .dash-score').invoke('text').should(t => expect(t.trim()).to.equal('0'));
+      cy.get('[data-name="alerts_ui_e2e"] .text-light.severity-padding .title').invoke('text').should(t => expect(t.trim()).to.equal('alerts_ui_e2e'));
+      cy.get('[data-name="alerts_ui_e2e"] .text-light.two-line .text-dark').invoke('text').should(t => expect(t.trim()).to.equal('ALERTS'));
+      cy.get('[data-name="alerts_ui_e2e"] .text-light.two-line .title').invoke('text').should(t => expect(t.trim()).to.equal('1,476'));
 
       cy.route('POST', '/api/v1/search/group', 'fixture:alerts-list/tree-view/search-src-dst-enrichments.json').as('multiTopLevelSearch');
       cy.get('[data-name="alerts_ui_e2e"]').click();
@@ -222,6 +221,7 @@ describe('Test spec for tree view', function() {
   it('should have search working for group details for multiple sub groups', () => {
 
     cy.route('POST', '/api/v1/search/search', 'fixture:alerts-list/tree-view/search-multi-subgroups.json').as('multiSubgroupInputSearch');
+    // force: true is necessary because the input is not visible using the ace input
     cy.get('app-alerts-list .ace_text-input').type('enrichments:geo:ip_dst_addr:country:FR', { force: true });
     cy.get('[data-name="search"]').click();
 
