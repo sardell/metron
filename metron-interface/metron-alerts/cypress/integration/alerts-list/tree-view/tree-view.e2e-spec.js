@@ -74,7 +74,6 @@ describe('Test spec for tree view', function() {
 
 
     it('drag and drop should change group order', () => {
-
       cy.get('app-group-by div[data-name="source:type"]').click();
       cy.route('POST', '/api/v1/search/group', 'fixture:alerts-list/tree-view/search-group-subgroup.json').as('subgroup');
       cy.get('app-group-by div[data-name="enrichments:geo:ip_dst_addr:country"]').click();
@@ -131,10 +130,12 @@ describe('Test spec for tree view', function() {
         cy.get('app-group-by .group-by-items.active .name').should((active) => {
           expect(active).to.contain('source:type').to.have.lengthOf(1);
         }, 'only source type group should be selected');
-        cy.route('POST', '**/api/v1/search/search', 'fixture:alerts-list/tree-view/search-group-yaf.json');
-        cy.get('[data-name="alerts_ui_e2e"]').click( { force: true } );
+        cy.route('POST', '**/api/v1/search/search', 'fixture:alerts-list/tree-view/search-group-yaf.json').as('s1');
 
-        cy.wait('@searchGroup').then(() => {
+
+        cy.get('[data-name="alerts_ui_e2e"]').click();
+
+        cy.wait('@s1').then(() => {
           cy.get('tr:first-of-type [data-name="guid"]').contains('68cba12e-0...ab95a9b8d7');
           cy.get('tr:first-of-type [data-name="timestamp"]').contains('2019-01-14 16:42:55');
           cy.get('tr:first-of-type [data-name="source:type"]').contains('alerts_ui_e2e');
@@ -171,50 +172,43 @@ describe('Test spec for tree view', function() {
     cy.get('app-group-by div[data-name="source:type"]').click();
     cy.get('app-group-by div[data-name="ip_dst_addr"]').click();
     cy.get('app-group-by div[data-name="enrichments:geo:ip_dst_addr:country"]').click();
-    cy.get('app-group-by .group-by-items.active .name').should('have.length', 3).each((active, index) => {
-      expect(active).to.contain(activeGroups[index]);
-    });
 
-    // Top Level Group Values should be present for alerts_ui_e2e
-    cy.get('[data-name="alerts_ui_e2e"] .dash-score').contains('0');
-    cy.get('[data-name="alerts_ui_e2e"] .text-light.severity-padding .title').contains('alerts_ui_e2e');
-    cy.get('[data-name="alerts_ui_e2e"] .text-light.two-line .text-dark').contains('ALERTS');
-    cy.get('[data-name="alerts_ui_e2e"] .text-light.two-line .title').contains('1,476');
+    cy.wait(1000).then(() => {
+      cy.get('app-group-by .group-by-items.active .name').should('have.length', 3).each((active, index) => {
+        expect(active).to.contain(activeGroups[index]);
+      });
 
-    cy.route('POST', '/api/v1/search/group', 'fixture:alerts-list/tree-view/search-src-dst-enrichments.json').as('multiTopLevelSearch');
-    cy.get('[data-name="alerts_ui_e2e"]').click( { force: true });
+      // Top Level Group Values should be present for alerts_ui_e2e
+      cy.get('[data-name="alerts_ui_e2e"] .dash-score').contains('0');
+      cy.get('[data-name="alerts_ui_e2e"] .text-light.severity-padding .title').contains('alerts_ui_e2e');
+      cy.get('[data-name="alerts_ui_e2e"] .text-light.two-line .text-dark').contains('ALERTS');
+      cy.get('[data-name="alerts_ui_e2e"] .text-light.two-line .title').contains('1,476');
 
-    cy.wait('@multiTopLevelSearch').then(() => {
-      // Second Level Group Values should be present for 204.152.254.221
-      cy.get('[data-name="alerts_ui_e2e"] [data-name="204.152.254.221"] [data-qe-id="subgroup-score"]').contains('0');
-      cy.get('[data-name="alerts_ui_e2e"] [data-name="204.152.254.221"] [data-qe-id="subgroup-name-total"]').contains('204.152.254.221 (47)');
+      cy.route('POST', '/api/v1/search/group', 'fixture:alerts-list/tree-view/search-src-dst-enrichments.json').as('multiTopLevelSearch');
+      cy.get('[data-name="alerts_ui_e2e"]').click();
 
-      // Third Level Group Values should be present for US
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="204.152.254.221"] [data-qe-id="subgroup-score"]').invoke('text').should(t => expect(t.trim()).to.equal('0'));
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="204.152.254.221"] [data-qe-id="subgroup-name-total"]').invoke('text').should(t => expect(t.trim()).to.equal('204.152.254.221 (47)'));
+
       cy.get('[data-name="alerts_ui_e2e"] [data-name="204.152.254.221"]').click();
-      cy.get('[data-name="alerts_ui_e2e"] [data-name="204.152.254.221"] + [data-name="US"] [data-qe-id="subgroup-score"]').contains('0');
-      cy.get('[data-name="alerts_ui_e2e"] [data-name="204.152.254.221"] + [data-name="US"] [data-qe-id="subgroup-name-total"]').contains('US (47)');
-    });
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="204.152.254.221"] + [data-name="US"] [data-qe-id="subgroup-score"]').invoke('text').should(t => expect(t.trim()).to.equal('0'));
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="204.152.254.221"] + [data-name="US"] [data-qe-id="subgroup-name-total"]').invoke('text').should(t => expect(t.trim()).to.equal('US (47)'));
 
-    cy.route('POST', '/api/v1/search/search', 'fixture:alerts-list/tree-view/search-subgroup.json').as('multiSecondLevelSearch');
-    cy.get('[data-name="alerts_ui_e2e"] [data-name="204.152.254.221"] + [data-name="US"]').click();
-    cy.wait('@multiSecondLevelSearch').then(() => {
+      cy.route('POST', '/api/v1/search/search', 'fixture:alerts-list/tree-view/search-subgroup.json').as('multiSecondLevelSearch');
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="204.152.254.221"] + [data-name="US"]').click();
       cy.get('[data-name="alerts_ui_e2e"] [data-qe-id="USSubGroupResults"] [data-name="guid"]').should('have.length', 5).each((alert, index) => {
         expect(alert).to.contain(usGroupIds[index]);
       });
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="62.75.195.236"] [data-qe-id="subgroup-score"]').invoke('text').should(t => expect(t.trim()).to.equal('0'));
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="62.75.195.236"] [data-qe-id="subgroup-name-total"]').invoke('text').should(t => expect(t.trim()).to.equal('62.75.195.236 (197)'));
 
-      // Second Level Group Values should be present for 62.75.195.236
-      cy.get('[data-name="alerts_ui_e2e"] [data-name="62.75.195.236"] [data-qe-id="subgroup-score"]').contains('0');
-      cy.get('[data-name="alerts_ui_e2e"] [data-name="62.75.195.236"] [data-qe-id="subgroup-name-total"]').contains('62.75.195.236 (197)');
-
-      // Third Level Group Values should be present for FR
       cy.get('[data-name="alerts_ui_e2e"] [data-name="62.75.195.236"]').click();
-      cy.get('[data-name="alerts_ui_e2e"] [data-name="62.75.195.236"] + [data-name="FR"] [data-qe-id="subgroup-score"]').contains('0');
-      cy.get('[data-name="alerts_ui_e2e"] [data-name="62.75.195.236"] + [data-name="FR"] [data-qe-id="subgroup-name-total"]').contains('FR (197)');
-    });
 
-    cy.route('POST', '/api/v1/search/search', 'fixture:alerts-list/tree-view/search-subgroup-FR.json').as('multiSecondLevelResults');
-    cy.get('[data-name="alerts_ui_e2e"] [data-name="62.75.195.236"] + [data-name="FR"]').click();
-    cy.wait('@multiSecondLevelResults').then(() => {
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="62.75.195.236"] + [data-name="FR"] [data-qe-id="subgroup-score"]').invoke('text').should(t => expect(t.trim()).to.equal('0'));
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="62.75.195.236"] + [data-name="FR"] [data-qe-id="subgroup-name-total"]').invoke('text').should(t => expect(t.trim()).to.equal('FR (197)'));
+
+      cy.route('POST', '/api/v1/search/search', 'fixture:alerts-list/tree-view/search-subgroup-FR.json').as('multiSecondLevelResults');
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="62.75.195.236"] + [data-name="FR"]').click();
       cy.get('[data-name="alerts_ui_e2e"] [data-qe-id="FRSubGroupResults"] [data-name="guid"]').should('have.length', 5).each((alert, index) => {
         expect(alert).to.contain(frGroupIds[index]);
       });
@@ -224,34 +218,25 @@ describe('Test spec for tree view', function() {
   it('should have search working for group details for multiple sub groups', () => {
 
     cy.route('POST', '/api/v1/search/search', 'fixture:alerts-list/tree-view/search-multi-subgroups.json').as('multiSubgroupInputSearch');
-    cy.get('app-alerts-list .ace_text-input').invoke('text', 'enrichments:geo:ip_dst_addr:country:FR');
+    cy.get('app-alerts-list .ace_text-input').type('enrichments:geo:ip_dst_addr:country:FR', { force: true });
     cy.get('[data-name="search"]').click();
 
-    cy.wait('@multiSubgroupInputSearch').then(() => {
-      cy.contains(' Alerts (636) ')
-      cy.get('.col-form-label-lg').should('have.text',' Alerts (636) ');
-    });
+    cy.get('.col-form-label-lg').invoke('text').should(t => expect(t.trim()).to.equal('Alerts (636)'));
 
     cy.route('POST', '/api/v1/search/group', 'fixture:alerts-list/tree-view/search-group-multi-subgroups.json').as('multiSubgroupTopLevelSearch');
     cy.get('app-group-by div[data-name="source:type"]').click();
     cy.get('app-group-by div[data-name="enrichments:geo:ip_dst_addr:country"]').click();
 
-    cy.wait('@multiSubgroupTopLevelSearch').then(() => {
-      cy.get('[data-name="alerts_ui_e2e"]').click( { force: true });
-      cy.get('[data-name="alerts_ui_e2e"] [data-name="FR"] [data-qe-id="subgroup-score"]').contains('0');
-      cy.get('[data-name="alerts_ui_e2e"] [data-name="FR"] [data-qe-id="subgroup-name-total"]').contains('FR (203)');
-    });
+    cy.wait(1000).then(() => {
+      cy.get('[data-name="alerts_ui_e2e"]').click();
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="FR"] [data-qe-id="subgroup-score"]').invoke('text').should(t => expect(t.trim()).to.equal('0'));
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="FR"] [data-qe-id="subgroup-name-total"]').invoke('text').should(t => expect(t.trim()).to.equal('FR (203)'));
 
-    // expect(await page.getNumOfSubGroups('alerts_ui_e2e')).toEqual(1, 'three sub groups should be present');
-    cy.route('POST', '/api/v1/search/search', 'fixture:alerts-list/tree-view/search-multi-subgroups-results.json').as('multiSubgroupSecondLevelSearch');
-    cy.get('[data-name="alerts_ui_e2e"] [data-name="FR"]').click();
-
-    cy.wait('@multiSubgroupSecondLevelSearch').then(() => {
+      cy.route('POST', '/api/v1/search/search', 'fixture:alerts-list/tree-view/search-multi-subgroups-results.json').as('multiSubgroupSecondLevelSearch');
+      cy.get('[data-name="alerts_ui_e2e"] [data-name="FR"]').click();
       cy.get('[data-name="alerts_ui_e2e"] [data-name="enrichments:geo:ip_dst_addr:country"]').each(cell => {
         expect(cell).to.contain('FR');
       });
     });
   });
-
-
 });
