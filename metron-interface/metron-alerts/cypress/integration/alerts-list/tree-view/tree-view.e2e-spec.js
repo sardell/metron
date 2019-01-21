@@ -169,9 +169,13 @@ describe('Test spec for tree view', function() {
     let frGroupIds = ['1d37e485-e...658807893f', 'd616fcc8-6...d2995003e1', '593bc02b-7...b9492dec85', '3f2b9dba-6...53b59399b7', 'f4b0f661-8...e5e29aa9e2'];
     const activeGroups = ['source:type', 'ip_dst_addr', 'enrichm...:country'];
 
+    cy.route('POST', '/api/v1/search/group', 'fixture:alerts-list/tree-view/search-src-dst-enrichments.json').as('multiGroupBy');
+
     cy.get('app-group-by div[data-name="source:type"]').click();
     cy.get('app-group-by div[data-name="ip_dst_addr"]').click();
     cy.get('app-group-by div[data-name="enrichments:geo:ip_dst_addr:country"]').click();
+
+    cy.wait('@multiGroupBy');
 
     cy.wait(1000).then(() => {
       cy.get('app-group-by .group-by-items.active .name').should('have.length', 3).each((active, index) => {
