@@ -1,0 +1,92 @@
+{
+  "groupedBy": "enrichments:geo:ip_dst_addr:country",
+  "groupResults": [
+    {
+      "key": "US",
+      "total": 346,
+      "score": 590.0,
+      "groupedBy": "source:type",
+      "groupResults": [
+        {
+          "key": "alerts_ui_e2e",
+          "total": 91,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "snort",
+          "total": 59,
+          "score": 590.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "bro",
+          "total": 196,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        }
+      ]
+    },
+    {
+      "key": "RU",
+      "total": 544,
+      "score": 540.0,
+      "groupedBy": "source:type",
+      "groupResults": [
+        {
+          "key": "alerts_ui_e2e",
+          "total": 72,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "snort",
+          "total": 54,
+          "score": 540.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "bro",
+          "total": 418,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        }
+      ]
+    },
+    {
+      "key": "FR",
+      "total": 636,
+      "score": 2020.0,
+      "groupedBy": "source:type",
+      "groupResults": [
+        {
+          "key": "alerts_ui_e2e",
+          "total": 203,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "snort",
+          "total": 202,
+          "score": 2020.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "bro",
+          "total": 231,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        }
+      ]
+    }
+  ]
+}
