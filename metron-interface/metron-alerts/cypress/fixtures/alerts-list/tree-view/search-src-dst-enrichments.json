@@ -1,0 +1,331 @@
+{
+  "groupedBy": "source:type",
+  "groupResults": [
+    {
+      "key": "alerts_ui_e2e",
+      "total": 1476,
+      "score": 0.0,
+      "groupedBy": "ip_dst_addr",
+      "groupResults": [
+        {
+          "key": "224.0.0.251",
+          "total": 6,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": []
+        },
+        {
+          "key": "204.152.254.221",
+          "total": 47,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "US",
+              "total": 47,
+              "score": 0.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "192.168.138.158",
+          "total": 476,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": []
+        },
+        {
+          "key": "192.168.138.2",
+          "total": 4,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": []
+        },
+        {
+          "key": "192.168.66.121",
+          "total": 362,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": []
+        },
+        {
+          "key": "192.168.66.1",
+          "total": 262,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": []
+        },
+        {
+          "key": "188.165.164.184",
+          "total": 6,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "FR",
+              "total": 6,
+              "score": 0.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "95.163.121.204",
+          "total": 72,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "RU",
+              "total": 72,
+              "score": 0.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "72.34.49.86",
+          "total": 44,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "US",
+              "total": 44,
+              "score": 0.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "62.75.195.236",
+          "total": 197,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "FR",
+              "total": 197,
+              "score": 0.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "snort",
+      "total": 1460,
+      "score": 14600.0,
+      "groupedBy": "ip_dst_addr",
+      "groupResults": [
+        {
+          "key": "204.152.254.221",
+          "total": 20,
+          "score": 200.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "US",
+              "total": 20,
+              "score": 200.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "192.168.138.158",
+          "total": 489,
+          "score": 4890.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": []
+        },
+        {
+          "key": "192.168.66.121",
+          "total": 542,
+          "score": 5420.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": []
+        },
+        {
+          "key": "192.168.66.1",
+          "total": 114,
+          "score": 1140.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": []
+        },
+        {
+          "key": "188.165.164.184",
+          "total": 4,
+          "score": 40.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "FR",
+              "total": 4,
+              "score": 40.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "95.163.121.204",
+          "total": 54,
+          "score": 540.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "RU",
+              "total": 54,
+              "score": 540.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "72.34.49.86",
+          "total": 39,
+          "score": 390.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "US",
+              "total": 39,
+              "score": 390.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "62.75.195.236",
+          "total": 198,
+          "score": 1980.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "FR",
+              "total": 198,
+              "score": 1980.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "bro",
+      "total": 1460,
+      "score": 0.0,
+      "groupedBy": "ip_dst_addr",
+      "groupResults": [
+        {
+          "key": "224.0.0.251",
+          "total": 133,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": []
+        },
+        {
+          "key": "204.152.254.221",
+          "total": 94,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "US",
+              "total": 94,
+              "score": 0.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "192.168.138.2",
+          "total": 198,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": []
+        },
+        {
+          "key": "192.168.66.121",
+          "total": 284,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": []
+        },
+        {
+          "key": "188.165.164.184",
+          "total": 19,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "FR",
+              "total": 19,
+              "score": 0.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "95.163.121.204",
+          "total": 418,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "RU",
+              "total": 418,
+              "score": 0.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "72.34.49.86",
+          "total": 102,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "US",
+              "total": 102,
+              "score": 0.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        },
+        {
+          "key": "62.75.195.236",
+          "total": 212,
+          "score": 0.0,
+          "groupedBy": "enrichments:geo:ip_dst_addr:country",
+          "groupResults": [
+            {
+              "key": "FR",
+              "total": 212,
+              "score": 0.0,
+              "groupedBy": null,
+              "groupResults": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

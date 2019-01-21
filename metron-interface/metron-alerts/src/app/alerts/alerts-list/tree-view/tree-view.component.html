@@ -13,14 +13,14 @@
 -->
 <div role="tablist"  class="tree-wrapper" aria-multiselectable="true">
   <div class="card" *ngFor="let group of topGroups; let i = index;" [attr.data-name]="group.key">
-    <div class="card-header" role="tab" [attr.id]="'title-' + i">
-      <div class="hexagon" appAlertSeverityHexagon [severity]="group.score">
+    <div class="card-header" role="tab" [attr.id]="'title-' + i" data-qe-id="group-wrapper">
+      <div class="hexagon" data-qe-id="group-score" appAlertSeverityHexagon [severity]="group.score">
         <span *ngIf="group.score < 1000" class="dash-score">{{ group.score }}</span>
         <span *ngIf="group.score >= 1000" class="dash-score">999<sup>+</sup></span>
       </div>
       <div class="mrow top-group" (click)="toggleTopLevelGroup(group)">
-        <div class="col-5 text-light severity-padding"> <span class="title"> {{ group.key | centerEllipses:45 }} </span> </div>
-        <div class="col-5 text-light two-line"> <span class="text-dark"> ALERTS </span> <br> <span class="title"> {{ group.total | number }} </span> </div>
+        <div class="col-5 text-light severity-padding"> <span class="title" data-qe-id="group-name"> {{ group.key | centerEllipses:45 }} </span> </div>
+        <div class="col-5 text-light two-line"> <span class="text-dark"> ALERTS </span> <br> <span class="title" data-qe-id="group-total"> {{ group.total | number }} </span> </div>
         <div class="col-1 text-right pr-4">
           <i class="fa fa-link top-group-link" aria-hidden="true" (click)="createMetaAlert($event, group, i)" data-animation="false" data-toggle="tooltip" data-placement="left"  title="Merge Alerts"></i>
         </div>
@@ -80,8 +80,8 @@
                     <span class="table-group-icon-col" data-animation="false" data-toggle="tooltip" data-placement="bottom" title="Open Group">
                       <i class="fa" aria-hidden="true" [ngClass]="{'fa-caret-down': subGroup.expand, 'fa-caret-right': !subGroup.expand}"></i>
                     </span>
-                    <span class="score" appAlertSeverity [severity]="subGroup.score"> {{ subGroup.score }} </span>
-                    <span class="group-value"> <span class="text-light">{{ subGroup.key }}</span> ({{ subGroup.total }})</span>
+                    <span class="score" appAlertSeverity [severity]="subGroup.score" data-qe-id="subgroup-score"> {{ subGroup.score }} </span>
+                    <span class="group-value" data-qe-id="subgroup-name-total"> <span class="text-light">{{ subGroup.key }}</span> ({{ subGroup.total }})</span>
                   </td>
                   <td>
                     <i style="color: #32ABDF;" class="fa fa-link" aria-hidden="true" (click)="createMetaAlert($event, subGroup, i)" data-animation="false" data-toggle="tooltip" data-placement="left"  title="Merge Alerts"></i>
@@ -89,7 +89,10 @@
                   <td> </td>
                 </tr>
 
-                <tr *ngFor="let alert of subGroup.response.results" [ngClass]="{'selected' : selectedAlerts.indexOf(alert) != -1, 'd-none': !subGroup.expand || !subGroup.show}" (click)="showDetails($event, alert)">
+                <tr *ngFor="let alert of subGroup.response.results"
+                    attr.data-qe-id="{{subGroup.key}}SubGroupResults"
+                    [ngClass]="{'selected' : selectedAlerts.indexOf(alert) != -1, 'd-none': !subGroup.expand || !subGroup.show}"
+                    (click)="showDetails($event, alert)">
                   <td [attr.colspan]="2" [ngStyle]="{'padding-left.px': (16 * (subGroup.level -1)) + 23}" (click)="addFilter(threatScoreFieldName(), getScore(alert.source))">
                     <div appAlertSeverity [severity]="getScore(alert.source)">
                       <a> {{ hasScore(alert.source) ? getScore(alert.source) : '-' }}</a>
