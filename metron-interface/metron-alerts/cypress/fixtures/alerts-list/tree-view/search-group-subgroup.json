@@ -1,0 +1,92 @@
+{
+  "groupedBy": "source:type",
+  "groupResults": [
+    {
+      "key": "alerts_ui_e2e",
+      "total": 1476,
+      "score": 0.0,
+      "groupedBy": "enrichments:geo:ip_dst_addr:country",
+      "groupResults": [
+        {
+          "key": "US",
+          "total": 91,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "RU",
+          "total": 72,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "FR",
+          "total": 203,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        }
+      ]
+    },
+    {
+      "key": "snort",
+      "total": 1460,
+      "score": 14600.0,
+      "groupedBy": "enrichments:geo:ip_dst_addr:country",
+      "groupResults": [
+        {
+          "key": "US",
+          "total": 59,
+          "score": 590.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "RU",
+          "total": 54,
+          "score": 540.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "FR",
+          "total": 202,
+          "score": 2020.0,
+          "groupedBy": null,
+          "groupResults": null
+        }
+      ]
+    },
+    {
+      "key": "bro",
+      "total": 1460,
+      "score": 0.0,
+      "groupedBy": "enrichments:geo:ip_dst_addr:country",
+      "groupResults": [
+        {
+          "key": "US",
+          "total": 196,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "RU",
+          "total": 418,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        },
+        {
+          "key": "FR",
+          "total": 231,
+          "score": 0.0,
+          "groupedBy": null,
+          "groupResults": null
+        }
+      ]
+    }
+  ]
+}
