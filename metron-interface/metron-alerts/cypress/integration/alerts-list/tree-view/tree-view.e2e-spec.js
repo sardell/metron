@@ -214,7 +214,7 @@ describe('Test spec for tree view', function() {
     });
   });
 
-  it.only('should have search working for group details for multiple sub groups', () => {
+  it('should have search working for group details for multiple sub groups', () => {
 
     cy.route('POST', '/api/v1/search/search', 'fixture:alerts-list/tree-view/search-multi-subgroups.json').as('multiSubgroupInputSearch');
     // force: true is necessary because the input is not visible using the ace input
