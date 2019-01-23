@@ -36,7 +36,7 @@ context('Alerts list: save search', () => {
     });
 
     cy.route('GET', '/api/v1/global/config', 'fixture:config.json');
-    cy.route('POST', 'search', 'fixture:search.json');
+    cy.route('POST', 'search', 'fixture:search.json').as('search');
 
     cy.visit('login');
     cy.wait(['@appConfig', '@user']).then(() => {
@@ -82,15 +82,23 @@ context('Alerts list: save search', () => {
     cy.get('.ace_line').should('have.text', '*');
     cy.get('.col-form-label-lg').should('have.text', ' Alerts (104593) ');
 
-    cy.contains('table tr td a', 'FR').click();
+    cy.wait('@search');
+
+    cy.contains('table tr:not(.d-none) td a', 'FR').click();
     cy.get('.ace_line').should('have.text', 'enrichments:geo:ip_dst_addr:country:FR');
 
-    cy.contains('table tr td a[data-qe-id="cell-2"]', 'bro').click();
+    cy.wait('@search');
+
+    cy.contains('table tr:not(.d-none) td a[data-qe-id="cell-2"]', 'bro').click();
     cy.get('.ace_line').should('have.text', 'enrichments:geo:ip_dst_addr:country:FR AND source:type:bro');
+
+    cy.wait('@search');
 
     cy.get('.ace_keyword').eq(0).trigger('mouseover');
     cy.get('.ace_value').eq(0).find('i').click();
     cy.get('.ace_line').should('have.text', 'source:type:bro');
+
+    cy.wait('@search');
 
     cy.get('.ace_keyword').eq(0).trigger('mouseover');
     cy.get('.ace_value').eq(0).find('i').click();
