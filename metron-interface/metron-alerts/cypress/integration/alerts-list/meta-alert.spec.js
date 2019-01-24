@@ -56,7 +56,7 @@ context('Alerts list: meta alert', () => {
 
     cy.route('POST', '/api/v1/search/search', 'fixture:alerts-list/meta-alert/search2.json').as('search2');
 
-    cy.get('[data-qe-id="cell-2"]').eq(0).click();
+    cy.get('tr:not(.d-none) [data-qe-id="cell-2"]').eq(0).click();
 
     cy.wait('@search2');
 

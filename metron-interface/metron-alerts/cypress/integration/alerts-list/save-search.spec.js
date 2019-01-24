@@ -82,14 +82,14 @@ context('Alerts list: save search', () => {
     cy.get('.ace_line').should('have.text', '*');
     cy.get('.col-form-label-lg').should('have.text', ' Alerts (104593) ');
 
-    cy.wait('@search');
+    cy.wait('@search').wait(500);
 
-    cy.contains('table tr:not(.d-none) td a', 'FR').click();
+    cy.get('[data-qe-id="row-3"] [data-qe-id="cell-4"]').click();
     cy.get('.ace_line').should('have.text', 'enrichments:geo:ip_dst_addr:country:FR');
 
-    cy.wait('@search');
+    cy.wait('@search').wait(500);
 
-    cy.contains('table tr:not(.d-none) td a[data-qe-id="cell-2"]', 'bro').click();
+    cy.get('[data-qe-id="row-1"] [data-qe-id="cell-2"]').click();
     cy.get('.ace_line').should('have.text', 'enrichments:geo:ip_dst_addr:country:FR AND source:type:bro');
 
     cy.wait('@search');
