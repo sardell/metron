@@ -602,3 +602,18 @@
 .show .navbar-parent.active .nav-item::before {
   left: px(-7);
 }
+
+.navbar-primary.collapse .navbar-parent .navbar-sublink-item {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.navbar-primary.collapse.show .navbar-parent .navbar-sublink-item,
+.navbar.navbar-primary.collapsing .navbar-parent .navbar-sublink-item {
+  max-height: 3rem;
+}
+
+.navbar.navbar-primary .navbar-parent .navbar-nav:not(.dropdown) {
+  width: $navbar-width;
+}
