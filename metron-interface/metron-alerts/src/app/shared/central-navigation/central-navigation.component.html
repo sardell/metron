@@ -7,30 +7,32 @@
 
   <div class="navbar-nav">
     <div *ngFor="let link of links">
-      <div class="navbar-nav dropdown"
-            data-toggle="collapse"
-            href="#navbarItemsToggle"
-            aria-controls="navbarToggle"
-            role="button"
-            aria-expanded="true">
-        <span class="nav-item nav-link">
-          <i class="icon fa fa-exclamation-triangle" aria-hidden="true"></i> {{ link.linkName }}
-        </span>
-      </div>
-      <div class="collapse show" id="navbarItemsToggle" *ngIf="link.subLinks">
-        <ul class="navbar-nav">
-          <li *ngFor="let subLink of link.subLinks">
-            <a class="nav-item nav-link"
-                [routerLink]="subLink.routerLink"
-                routerLinkActive="active"
-                data-toggle="tooltip"
-                data-placement="right"
-                data-condition="truncated"
-                title="Alerts">
-                <i class="icon fa" aria-hidden="true"></i> {{ subLink.linkName }}
-            </a>
-          </li>
-        </ul>
+      <div class="navbar-parent" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <div class="navbar-nav dropdown"
+              data-toggle="collapse"
+              href="#navbarItemsToggle"
+              aria-controls="navbarToggle"
+              role="button"
+              aria-expanded="true">
+          <span class="nav-item nav-link">
+            <i class="icon fa fa-exclamation-triangle" aria-hidden="true"></i> {{ link.linkName }}
+          </span>
+        </div>
+        <div class="collapse show" id="navbarItemsToggle" *ngIf="link.subLinks">
+          <ul class="navbar-nav">
+            <li *ngFor="let subLink of link.subLinks">
+              <a class="nav-item nav-link"
+                  [routerLink]="subLink.routerLink"
+                  routerLinkActive="active"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  data-condition="truncated"
+                  title="Alerts">
+                  <i class="icon fa" aria-hidden="true"></i> {{ subLink.linkName }}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
