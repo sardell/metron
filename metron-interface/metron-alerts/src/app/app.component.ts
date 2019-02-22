@@ -30,6 +30,7 @@ export class AppComponent implements OnInit {
   centralNavLinks = [
     {
       linkName: 'Alerts',
+      iconClass: 'fa-exclamation-triangle',
       subLinks: [
         {
           linkName: 'Overview',
@@ -40,7 +41,7 @@ export class AppComponent implements OnInit {
           routerLink: '/pcap'
         }
       ]
-    }
+    },
   ]
 
   constructor(private authService: AuthenticationService) {

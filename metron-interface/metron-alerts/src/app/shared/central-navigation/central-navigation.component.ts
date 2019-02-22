@@ -19,6 +19,7 @@ export class CentralNavigationComponent implements OnInit {
 export class CentralNavLink {
   linkName: string;
   subLinks: CentralNavSublink[];
+  iconClass: string;
 }
 
 export class CentralNavSublink {
