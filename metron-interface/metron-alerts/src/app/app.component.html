@@ -12,17 +12,13 @@
   the specific language governing permissions and limitations under the License.
   -->
 <div class="container-fluid px-0" [class.notransition]="noTransition">
-    <app-central-navigation *ngIf="loggedIn" [links]="centralNavLinks"></app-central-navigation>
-    <nav class="navbar" *ngIf="loggedIn">
+    <app-central-navigation *ngIf="loggedIn" [links]="centralNavLinks" (collapse)="menuToggle($event)"></app-central-navigation>
+    <header class="navbar header" *ngIf="loggedIn" [ngClass]="{ 'nav-collapsed ': collapseMenu }">
         <div class="logout ml-auto">Logged in as {{authService.currentUser}} - <span class="logout-link" (click)="authService.logout()">Logout</span></div>
-    </nav>
-    <div class="container-fluid">
+    </header>
+    <main class="container-fluid main" [ngClass]="{ 'nav-collapsed ': collapseMenu }">
         <router-outlet></router-outlet>
-    </div>
+    </main>
     <router-outlet name="dialog" ></router-outlet>
     <app-metron-dialog></app-metron-dialog>
 </div>
-
-
-
-

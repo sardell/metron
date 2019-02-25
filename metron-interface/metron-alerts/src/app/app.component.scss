@@ -54,3 +54,13 @@
   color: $all-ports;
   cursor: pointer;
 }
+
+.header,
+.main {
+  @include transition($transition-collapse-all);
+  padding-left: calc(#{$navbar-width} + #{$grid-gutter-width});
+}
+
+.nav-collapsed {
+  padding-left: calc(#{$navbar-width-sm} + #{$grid-gutter-width});
+}
