@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-central-navigation',
@@ -7,11 +8,18 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class CentralNavigationComponent implements OnInit {
+  collapsed = false;
   @Input() links: CentralNavLink[];
+  @Output() collapse: BehaviorSubject<any> = new BehaviorSubject(this.collapsed);
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleMenu() {
+    this.collapsed = !this.collapsed;
+    this.collapse.next(this.collapsed);
   }
 
 }

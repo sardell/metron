@@ -27,6 +27,7 @@ import { environment } from 'environments/environment';
 export class AppComponent implements OnInit {
   loggedIn = false;
   noTransition = false;
+  collapseMenu: boolean;
   centralNavLinks = [
     {
       linkName: 'Alerts',
@@ -53,5 +54,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
 
+  }
+
+  menuToggle(val) {
+    this.collapseMenu = val;
   }
 }
