@@ -16,15 +16,16 @@
  * limitations under the License.
  */
 @import "../variables";
+@import "./fluid-variables";
 
 .navbar
 {
   flex-direction: row;
   background: $nav-bar-bg;
   padding: 0rem 1rem;
-  height: 50px;
+  height: $navbar-brand-height;
   line-height: 50px;
-  max-height: 50px;
+  max-height: $navbar-brand-height;
 }
 
 .nav-link
