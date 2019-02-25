@@ -1,0 +1,19 @@
+@import '../../../variables';
+@import '../../fluid-variables';
+@import '../../../../node_modules/bootstrap/scss/breadcrumb';
+
+.breadcrumb {
+
+    .breadcrumb-item {
+      font-size: $font-size-lg;
+      color: rgb(104, 154, 169);
+
+      &.active {
+        color: $silver-chalice-3;
+      }
+
+      a {
+        color: rgb(104, 154, 169);
+      }
+    }
+  }
