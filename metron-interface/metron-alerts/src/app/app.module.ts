@@ -51,6 +51,7 @@ import { MetronDialogComponent } from './shared/metron-dialog/metron-dialog.comp
 import {PcapModule} from './pcap/pcap.module';
 import { AppConfigService } from './service/app-config.service';
 import { CentralNavigationComponent } from './shared/central-navigation/central-navigation.component';
+import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 
 export function initConfig(appConfigService: AppConfigService) {
   return () => appConfigService.loadAppConfig();
@@ -60,7 +61,8 @@ export function initConfig(appConfigService: AppConfigService) {
   declarations: [
     AppComponent,
     MetronDialogComponent,
-    CentralNavigationComponent
+    CentralNavigationComponent,
+    BreadcrumbComponent,
   ],
   imports: [
     BrowserModule,
