@@ -235,7 +235,7 @@
       }
 
       .navbar-toggler-icon::before {
-        content: theme-icon('navbar-expand');
+        content: theme-icon('navbar-collapse');
       }
     }
   }
@@ -631,4 +631,12 @@
 
 .navbar.navbar-primary .navbar-parent .navbar-nav:not(.dropdown) {
   width: $navbar-width;
+}
+
+.navbar-primary.collapse:not(.show):not(.collapsing) .nav-item.active:not(:hover) {
+  background-color: #313544;
+}
+
+.navbar.navbar-primary.collapse:not(.show) .navbar-toggler-icon::before, .navbar.navbar-primary.collapsing:not(.show) .navbar-toggler-icon::before {
+  content: theme-icon('navbar-expand');
 }
