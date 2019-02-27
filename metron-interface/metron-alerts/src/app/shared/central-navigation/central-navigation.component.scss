@@ -606,11 +606,26 @@
 .navbar-primary.collapse .navbar-parent .navbar-sublink-item {
   max-height: 0;
   overflow: hidden;
+  transition: none;
+}
+
+.navbar.navbar-primary.collapsing .navbar-parent .navbar-sublink-item {
+  max-height: 0;
+  overflow: hidden;
   transition: max-height 0.35s ease;
 }
 
-.navbar-primary.collapse.show .navbar-parent .navbar-sublink-item,
-.navbar.navbar-primary.collapsing .navbar-parent .navbar-sublink-item {
+.navbar-primary.collapse.show .navbar-parent .navbar-sublink-item {
+  max-height: 3rem;
+  transition: max-height 0.35s ease;
+}
+
+.navbar-primary.collapse .navbar-parent:hover .navbar-nav:not(.dropdown) {
+  background-color: #313544;
+  left: $navbar-width-sm;
+}
+
+.navbar.navbar-primary.collapse .navbar-parent:hover .navbar-sublink-item {
   max-height: 3rem;
 }
 

@@ -6,7 +6,7 @@
   </a>
 
   <div class="navbar-nav">
-    <div *ngFor="let link of links">
+    <div *ngFor="let link of links; let i = index">
       <div *ngIf="!link.subLinks">
         <a class="nav-item nav-link">
           <i class="icon fa {{ link.iconClass }}"></i>
@@ -14,9 +14,12 @@
         </a>
       </div>
       <div class="navbar-parent"
+            #navbarParent
             *ngIf="link.subLinks"
             routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact: true}">
+            [routerLinkActiveOptions]="{exact: true}"
+            (mouseenter)="hover($event, i)"
+            (mouseleave)="hovered = null">
         <div class="navbar-nav dropdown"
               attr.href="#{{ link.linkName }}"
               data-toggle="collapse"
@@ -28,7 +31,7 @@
           </span>
         </div>
         <div class="collapse show" [attr.id]="link.linkName" *ngIf="link.subLinks">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav" #navbarChild [ngStyle]="hovered === i ? collapsedSubMenu : 0">
             <li class="navbar-sublink-item" *ngFor="let subLink of link.subLinks">
               <a class="nav-item nav-link"
                   [routerLink]="subLink.routerLink"
