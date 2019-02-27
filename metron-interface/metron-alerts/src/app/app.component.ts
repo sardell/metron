@@ -43,6 +43,20 @@ export class AppComponent implements OnInit {
         }
       ]
     },
+    {
+      linkName: 'TEST',
+      iconClass: 'fa-exclamation-triangle',
+      subLinks: [
+        {
+          linkName: 'test',
+          routerLink: '/test'
+        },
+        {
+          linkName: 'test',
+          routerLink: '/another'
+        }
+      ]
+    }
   ]
 
   constructor(private authService: AuthenticationService) {
