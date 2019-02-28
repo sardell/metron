@@ -52,6 +52,7 @@ import {PcapModule} from './pcap/pcap.module';
 import { AppConfigService } from './service/app-config.service';
 import { CentralNavigationComponent } from './shared/central-navigation/central-navigation.component';
 import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
+import { MetronSharedLibModule } from 'metron-shared-lib';
 
 export function initConfig(appConfigService: AppConfigService) {
   return () => appConfigService.loadAppConfig();
@@ -78,7 +79,8 @@ export function initConfig(appConfigService: AppConfigService) {
     SaveSearchModule,
     SavedSearchesModule,
     SwitchModule,
-    PcapModule
+    PcapModule,
+    MetronSharedLibModule
   ],
   providers: [{ provide: APP_INITIALIZER, useFactory: initConfig, deps: [AppConfigService], multi: true },
               { provide: DataSource, useClass: ElasticSearchLocalstorageImpl },
