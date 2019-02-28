@@ -26,6 +26,7 @@ export class CentralNavigationComponent {
     display: 'block',
     top: '0'
   };
+  hostname = window.location.hostname;
 
   constructor() {}
 
@@ -46,9 +47,12 @@ export class CentralNavLink {
   linkName: string;
   subLinks: CentralNavSublink[];
   iconClass: string;
+  routerLink: string;
+  externalLink = false;
 }
 
 export class CentralNavSublink {
   linkName: string;
   routerLink: string;
+  externalLink = false;
 }
