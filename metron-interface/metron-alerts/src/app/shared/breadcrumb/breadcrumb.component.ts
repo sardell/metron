@@ -29,7 +29,7 @@ export class BreadcrumbComponent implements OnInit, OnDestroy {
         this.url = data.breadcrumb;
         return data
       }),
-    ).subscribe(console.log);
+    ).subscribe();
   }
 
   ngOnDestroy() {

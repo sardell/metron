@@ -60,6 +60,8 @@ export class AppComponent implements OnInit {
       ]
     }
   ]
+  logo = ['assets/images/logo-symbol.png', 'assets/images/logo-name.png'];
+  baseNav = 'Alerts';
 
   constructor(private authService: AuthenticationService) {
     this.authService.onLoginEvent.subscribe(result => {
