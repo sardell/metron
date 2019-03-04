@@ -17,6 +17,10 @@
  */
 @import "_variables.scss";
 
+$navbar-width:                      200px;
+$navbar-width-sm:                   50px;
+$grid-gutter-width:           15px;
+
 .navigation{
 
   background-color: $gray-light;
@@ -32,4 +36,16 @@
   background: $gray-dark;
   border: none;
   flex: 1;
+}
+
+.header { display: flex; }
+
+.header,
+.main {
+  transition: all .35s ease, color 0s, background-color 0s;
+  padding-left: calc(#{$navbar-width} + #{$grid-gutter-width});
+}
+
+.nav-collapsed {
+  padding-left: calc(#{$navbar-width-sm} + #{$grid-gutter-width});
 }

@@ -8,8 +8,7 @@
     aria-expanded="true"
     aria-label="Toggle product navigation"
   >
-    <img class="icon" src="assets/images/logo-symbol.png" alt="" />
-    <img src="assets/images/logo-name.png" alt="" style="width: 4rem" />
+    <img *ngFor="let img of logo" class="icon" [src]="img" alt="" style="height: 2rem; width: auto;">
   </a>
 
   <div class="navbar-nav">
@@ -92,7 +91,7 @@
                 title="Alerts"
               >
                 <i class="icon fa" aria-hidden="true"></i>
-                {{ subLink.linkName }} test
+                {{ subLink.linkName }}
               </a>
             </li>
           </ul>

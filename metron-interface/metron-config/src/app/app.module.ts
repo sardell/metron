@@ -46,6 +46,7 @@ import {SensorIndexingConfigService} from './service/sensor-indexing-config.serv
 import {HdfsService} from './service/hdfs.service';
 import { DefaultHeadersInterceptor } from './http-interceptors/default-headers.interceptor';
 import {AppConfigService} from './service/app-config.service';
+import { MetronSharedLibModule } from 'metron-shared-lib';
 
 export function initConfig(appConfigService: AppConfigService) {
   return () => appConfigService.loadAppConfig();
@@ -53,7 +54,7 @@ export function initConfig(appConfigService: AppConfigService) {
 
 @NgModule({
   imports: [ BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, SensorParserListModule,
-    SensorParserConfigModule, SensorParserConfigReadonlyModule, GeneralSettingsModule, MetronConfigRoutingModule ],
+    SensorParserConfigModule, SensorParserConfigReadonlyModule, GeneralSettingsModule, MetronConfigRoutingModule, MetronSharedLibModule ],
   declarations: [ AppComponent, NavbarComponent, VerticalNavbarComponent ],
   providers: [  AppConfigService, AuthenticationService, AuthGuard, LoginGuard, SensorParserConfigService,
     SensorParserConfigHistoryService, SensorEnrichmentConfigService, SensorIndexingConfigService,

@@ -15,6 +15,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class CentralNavigationComponent {
   @Input() links: CentralNavLink[];
+  @Input() logo: string[];
   @Output() collapse: BehaviorSubject<any> = new BehaviorSubject(false);
   @ViewChildren('navbarParent', { read: ElementRef }) navbarParent: QueryList<
     ElementRef
