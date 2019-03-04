@@ -1,6 +1,8 @@
 @import '../fluid-variables';
 @import '../../../node_modules/bootstrap/scss/breadcrumb';
+
 .breadcrumb {
+  margin-bottom: 0;
 
   .breadcrumb-item {
     font-size: 22px;
