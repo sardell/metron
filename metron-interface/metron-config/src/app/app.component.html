@@ -16,9 +16,10 @@
 <div class="container-fluid px-0">
   <mtr-central-navigation *ngIf="loggedIn" [links]="centralNavLinks" [logo]="logo" (collapse)="menuToggle($event)"></mtr-central-navigation>
   <header class="navbar header" *ngIf="loggedIn" [ngClass]="{ 'nav-collapsed ': collapseMenu }">
+    <mtr-breadcrumb [baseNav]="baseNav"></mtr-breadcrumb>
     <metron-config-navbar class="ml-auto"></metron-config-navbar>
   </header>
-  <div class="main" [ngClass]="{'container-fluid body-fill': loggedIn, 'fill': !loggedIn, 'nav-collapsed ': collapseMenu}">
+  <div class="main py-3" [ngClass]="{'container-fluid body-fill': loggedIn, 'fill': !loggedIn, 'nav-collapsed ': collapseMenu}">
     <div [ngClass]="{'card-group ': loggedIn}" class="fill">
       <div [ngClass]="{'fill content px-0 ' : loggedIn , 'fill': !loggedIn}"><router-outlet></router-outlet></div>
     </div>

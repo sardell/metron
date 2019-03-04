@@ -62,6 +62,7 @@ export class AppComponent {
     }
   ];
   logo = ['assets/images/logo-symbol.png', 'assets/images/logo-name.png'];
+  baseNav = 'Management';
 
   constructor(private authService: AuthenticationService) {
     this.authService.onLoginEvent.subscribe(result => {
