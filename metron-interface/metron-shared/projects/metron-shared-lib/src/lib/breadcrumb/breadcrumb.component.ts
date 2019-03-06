@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
-import { ActivatedRoute, Router, ResolveStart } from '@angular/router';
+import { Router, ResolveStart } from '@angular/router';
 import { map, filter } from 'rxjs/operators';
 
 @Component({
@@ -12,7 +12,7 @@ export class BreadcrumbComponent implements OnInit, OnDestroy {
   public breadcrumb;
   public url;
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     this.breadcrumb = this.router.events

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CentralNavigationComponent } from './central-navigation.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('CentralNavigationComponent', () => {
   let component: CentralNavigationComponent;
@@ -8,6 +9,7 @@ describe('CentralNavigationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ RouterTestingModule ],
       declarations: [ CentralNavigationComponent ]
     })
     .compileComponents();
