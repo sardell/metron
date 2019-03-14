@@ -60,8 +60,9 @@
           *ngIf="link.subLinks"
         >
           <ul
-            class="navbar-nav"
+            class="navbar-nav navbar-submenu"
             #navbarChild
+            [ngClass]="{'expanded': hovered === i}"
             [ngStyle]="hovered === i ? collapsedSubMenu : 0"
           >
             <li

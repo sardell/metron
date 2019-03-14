@@ -23,8 +23,6 @@ export class CentralNavigationComponent {
   collapsed = false;
   hovered = null;
   collapsedSubMenu = {
-    position: 'fixed',
-    display: 'block',
     top: '0'
   };
   hostname = window.location.hostname;

@@ -643,6 +643,12 @@
   background-color: #313544;
 }
 
-.navbar.navbar-primary.collapse:not(.show) .navbar-toggler-icon::before, .navbar.navbar-primary.collapsing:not(.show) .navbar-toggler-icon::before {
+.navbar.navbar-primary.collapse:not(.show) .navbar-toggler-icon::before,
+.navbar.navbar-primary.collapsing:not(.show) .navbar-toggler-icon::before {
   content: theme-icon('navbar-expand');
+}
+
+.navbar-submenu.expanded {
+  display: block;
+  position: fixed;
 }
