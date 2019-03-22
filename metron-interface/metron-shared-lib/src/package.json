@@ -1,0 +1,9 @@
+{
+  "name": "metron-shared-lib",
+  "es2015": "bundles/metron-shared-lib.es2015.js",
+  "peerDependencies": {
+    "@angular/core": "*",
+    "@angular/common": "*"
+  },
+  "version": "0.0.0"
+}
