@@ -1,18 +1,18 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-import { CentralNavigationComponent } from './central-navigation.component';
+import { BreadcrumbComponent } from './breadcrumb.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [CommonModule, RouterModule],
-  declarations: [CentralNavigationComponent],
-  exports: [CentralNavigationComponent],
-  entryComponents: [CentralNavigationComponent]
+  declarations: [BreadcrumbComponent],
+  exports: [BreadcrumbComponent],
+  entryComponents: [BreadcrumbComponent]
 })
-export class CentralNavigationModule {
+export class BreadcrumbModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: CentralNavigationModule,
+      ngModule: BreadcrumbModule,
       providers: []
     };
   }

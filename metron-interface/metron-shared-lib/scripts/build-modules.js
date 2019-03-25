@@ -24,19 +24,16 @@ async function buildAll() {
   }
 
   await buildPkgJson.buildPkgJson({ src, dist });
-  // await execa.shell(`json -I -f ${dist}/package.json -e 'this.schematics="./schematics/collection.json"'`);
   cpy(['*.md', 'LICENSE'], dist);
 
   await execa.shell(`npm run link`);
 
-  const requiredModules = ['central-navigation'];
+  const requiredModules = ['breadcrumb','central-navigation','common'];
 
   await buildModules(requiredModules);
 
-  // await execa.shell(`rsync -avr  --include='*/' --include='*.scss' --exclude='*' ${src}/datepicker ${dist}`);
-
-  // await execa.shell(`rsync -a dist/common/. dist/ --exclude package.json`);
-  // await del(`${dist}/${common}`);
+  await execa.shell(`rsync -a dist/common/. dist/ --exclude package.json`);
+  await del(`${dist}/${common}`);
 }
 
 const cli = meow(`

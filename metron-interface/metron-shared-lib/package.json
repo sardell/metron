@@ -1,5 +1,5 @@
 {
-  "name": "metron-shared-lib-base",
+  "name": "metron-shared-lib",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "link": "npm link ./dist && npm link metron-shared-lib"
+    "link": "npm link ./dist && npm link metron-shared-lib",
+    "postinstall": "npm run build"
   },
   "main": "bundles/metron-shared-lib.umd.js",
   "private": true,

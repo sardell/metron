@@ -1,0 +1,19 @@
+@import '../fluid-variables';
+@import '../../node_modules/bootstrap/scss/breadcrumb';
+
+.breadcrumb {
+  margin-bottom: 0;
+
+  .breadcrumb-item {
+    font-size: 22px;
+    color: rgb(104, 154, 169);
+
+    &.active {
+      color: rgb(176, 176, 176);
+    }
+
+    a {
+      color: rgb(104, 154, 169);
+    }
+  }
+}
