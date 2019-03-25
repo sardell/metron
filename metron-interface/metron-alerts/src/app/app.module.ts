@@ -50,9 +50,8 @@ import { DialogService } from './service/dialog.service';
 import { MetronDialogComponent } from './shared/metron-dialog/metron-dialog.component';
 import {PcapModule} from './pcap/pcap.module';
 import { AppConfigService } from './service/app-config.service';
-import { CentralNavigationComponent } from './shared/central-navigation/central-navigation.component';
-import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
-import { MetronSharedLibModule } from 'metron-shared-lib';
+import { BreadcrumbModule } from 'metron-shared-lib/breadcrumb';
+import { CentralNavigationModule } from 'metron-shared-lib/central-navigation';
 
 export function initConfig(appConfigService: AppConfigService) {
   return () => appConfigService.loadAppConfig();
@@ -62,8 +61,6 @@ export function initConfig(appConfigService: AppConfigService) {
   declarations: [
     AppComponent,
     MetronDialogComponent,
-    CentralNavigationComponent,
-    BreadcrumbComponent,
   ],
   imports: [
     BrowserModule,
@@ -80,7 +77,8 @@ export function initConfig(appConfigService: AppConfigService) {
     SavedSearchesModule,
     SwitchModule,
     PcapModule,
-    MetronSharedLibModule
+    CentralNavigationModule.forRoot(),
+    BreadcrumbModule.forRoot(),
   ],
   providers: [{ provide: APP_INITIALIZER, useFactory: initConfig, deps: [AppConfigService], multi: true },
               { provide: DataSource, useClass: ElasticSearchLocalstorageImpl },
