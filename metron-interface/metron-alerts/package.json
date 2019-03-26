@@ -14,7 +14,9 @@
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
     "cypress:ci": "ng build --prod && run-p --race start:ci cypress:run",
-    "start:ci": "node ./scripts/alerts-server.js -c alerts_ui_cypress.yml"
+    "start:ci": "node ./scripts/alerts-server.js -c alerts_ui_cypress.yml",
+    "build-lib": "cd ../metron-shared-lib && npm ci && npm run link && cd ../metron-alerts",
+    "postinstall": "npm run build-lib && npm link metron-shared-lib"
   },
   "private": true,
   "dependencies": {
@@ -35,7 +37,6 @@
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
-    "metron-shared-lib": "file:../metron-shared-lib/dist",
     "moment": "^2.22.2",
     "ng2-dragula": "^1.5.0",
     "pikaday-time": "^1.6.1",
