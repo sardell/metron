@@ -18,7 +18,7 @@
     "copy-ace": "cp -f $npm_package_config_node_ace/ext-language_tools.js $npm_package_config_node_ace/mode-json.js $npm_package_config_node_ace/theme-monokai.js $npm_package_config_node_ace/worker-json.js src/assets/ace",
     "copy-ace-snippets": "cp -f $npm_package_config_node_ace/snippets/text.js $npm_package_config_node_ace/snippets/json.js  src/assets/ace/snippets",
     "build-lib": "cd ../metron-shared-lib && npm ci && npm run link && cd ../metron-config",
-    "postinstall": "npm run copy-ace & npm run copy-ace-snippets & npm run build-lib & & npm link metron-shared-lib"
+    "postinstall": "npm run copy-ace & npm run copy-ace-snippets & npm run build-lib && npm link metron-shared-lib"
   },
   "private": true,
   "dependencies": {
