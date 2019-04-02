@@ -16,16 +16,18 @@
  * limitations under the License.
  */
 @import "../variables";
-@import "./fluid-variables";
 
-.navbar
-{
+$navbar-width:                      250px;
+$navbar-width-sm:                   50px;
+$grid-gutter-width:           15px;
+
+.navbar {
   flex-direction: row;
-  background: $nav-bar-bg;
+  background: #2e2e2e;
   padding: 0rem 1rem;
-  height: $navbar-brand-height;
+  height: 68px;
   line-height: 50px;
-  max-height: $navbar-brand-height;
+  max-height: 68px;
 }
 
 .nav-link
@@ -57,10 +59,11 @@
 
 .header,
 .main {
-  @include transition($transition-collapse-all);
-  padding-left: calc(#{$navbar-width} + #{$grid-gutter-width});
+  transition: all .35s ease, color 0s, background-color 0s;
+  padding-left: calc(14rem + #{$grid-gutter-width});
 }
 
 .nav-collapsed {
   padding-left: calc(#{$navbar-width-sm} + #{$grid-gutter-width});
 }
+
