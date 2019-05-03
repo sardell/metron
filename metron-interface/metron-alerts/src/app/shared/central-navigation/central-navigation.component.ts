@@ -1,3 +1,21 @@
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 import {
   Component,
   Input,
@@ -9,12 +27,13 @@ import {
 import { BehaviorSubject } from 'rxjs';
 
 @Component({
-  selector: 'app-central-navigation',
+  selector: 'mtr-central-navigation',
   templateUrl: './central-navigation.component.html',
   styleUrls: ['./central-navigation.component.scss']
 })
 export class CentralNavigationComponent {
   @Input() links: CentralNavLink[];
+  @Input() logo: string[];
   @Output() collapse: BehaviorSubject<any> = new BehaviorSubject(false);
   @ViewChildren('navbarParent', { read: ElementRef }) navbarParent: QueryList<
     ElementRef
@@ -22,10 +41,9 @@ export class CentralNavigationComponent {
   collapsed = false;
   hovered = null;
   collapsedSubMenu = {
-    position: 'fixed',
-    display: 'block',
     top: '0'
   };
+  hostname = window.location.hostname;
 
   constructor() {}
 
@@ -46,9 +64,12 @@ export class CentralNavLink {
   linkName: string;
   subLinks: CentralNavSublink[];
   iconClass: string;
+  routerLink: string;
+  externalLink = false;
 }
 
 export class CentralNavSublink {
   linkName: string;
   routerLink: string;
+  externalLink = false;
 }

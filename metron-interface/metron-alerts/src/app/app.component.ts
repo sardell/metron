@@ -44,20 +44,24 @@ export class AppComponent implements OnInit {
       ]
     },
     {
-      linkName: 'TEST',
-      iconClass: 'fa-exclamation-triangle',
+      linkName: 'Management',
+      iconClass: 'fa-wrench',
       subLinks: [
         {
-          linkName: 'test',
-          routerLink: '/test'
+          linkName: 'Sensors',
+          routerLink: ':4200/sensors',
+          externalLink: true
         },
         {
-          linkName: 'test',
-          routerLink: '/another'
+          linkName: 'General Settings',
+          routerLink: ':4200/general-settings',
+          externalLink: true
         }
       ]
     }
   ]
+  logo = ['assets/images/logo-symbol.png', 'assets/images/logo-name.png'];
+  baseNav = 'Alerts';
 
   constructor(private authService: AuthenticationService) {
     this.authService.onLoginEvent.subscribe(result => {
