@@ -13,13 +13,16 @@
 	OR CONDITIONS OF ANY KIND, either express or implied. See the License for
   the specific language governing permissions and limitations under the License.
   -->
-<div class="container-fluid header" *ngIf="loggedIn">
-  <metron-config-navbar></metron-config-navbar>
-</div>
-<div [ngClass]="{'container-fluid body-fill px-0': loggedIn, 'fill': !loggedIn}">
-  <div [ngClass]="{'card-group ': loggedIn}" class="fill">
-    <div  *ngIf="loggedIn" class="fill navigation" ><metron-config-vertical-navbar></metron-config-vertical-navbar></div>
-    <div [ngClass]="{'fill content px-0 ' : loggedIn , 'fill': !loggedIn}"><router-outlet></router-outlet></div>
+  <div class="container-fluid px-0">
+    <mtr-central-navigation *ngIf="loggedIn" [links]="centralNavLinks" [logo]="logo" (collapse)="menuToggle($event)"></mtr-central-navigation>
+    <header class="navbar header" *ngIf="loggedIn" [ngClass]="{ 'nav-collapsed ': collapseMenu }">
+      <mtr-breadcrumb [baseNav]="baseNav"></mtr-breadcrumb>
+      <metron-config-navbar class="ml-auto"></metron-config-navbar>
+    </header>
+    <div class="main py-3" [ngClass]="{'container-fluid body-fill': loggedIn, 'fill': !loggedIn, 'nav-collapsed ': collapseMenu}">
+      <div [ngClass]="{'card-group ': loggedIn}" class="fill">
+        <div [ngClass]="{'fill content px-0 ' : loggedIn , 'fill': !loggedIn}"><router-outlet></router-outlet></div>
+      </div>
+    </div>
   </div>
-</div>
-<router-outlet name="dialog" ></router-outlet>
+  <router-outlet name="dialog" ></router-outlet>

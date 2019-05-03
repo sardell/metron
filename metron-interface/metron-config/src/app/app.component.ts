@@ -28,11 +28,50 @@ import {AuthenticationService} from './service/authentication.service';
 export class AppComponent {
 
   loggedIn = false;
+  collapseMenu: boolean;
+  centralNavLinks = [
+    {
+      linkName: 'Alerts',
+      iconClass: 'fa-exclamation-triangle',
+      subLinks: [
+        {
+          linkName: 'Overview',
+          routerLink: ':4201/alerts-list',
+          externalLink: true
+        },
+        {
+          linkName: 'PCAP',
+          routerLink: ':4201/pcap',
+          externalLink: true
+        }
+      ]
+    },
+    {
+      linkName: 'Management',
+      iconClass: 'fa-wrench',
+      subLinks: [
+        {
+          linkName: 'Sensors',
+          routerLink: '/sensors',
+        },
+        {
+          linkName: 'General Settings',
+          routerLink: '/general-settings'
+        }
+      ]
+    }
+  ];
+  logo = ['assets/images/logo-symbol.png', 'assets/images/logo-name.png'];
+  baseNav = 'Management';
 
   constructor(private authService: AuthenticationService) {
     this.authService.onLoginEvent.subscribe(result => {
       this.loggedIn = result;
     });
+  }
+
+  menuToggle(val) {
+    this.collapseMenu = val;
   }
 
 }

@@ -21,7 +21,11 @@ import {AuthGuard} from '../shared/auth-guard';
 import {GeneralSettingsComponent} from './general-settings.component';
 
 const routes: Routes = [
-  { path: 'general-settings', component: GeneralSettingsComponent, canActivate: [AuthGuard]}
+  {
+    path: 'general-settings', component: GeneralSettingsComponent, canActivate: [AuthGuard], data: {
+      breadcrumb: 'General Settings'
+    }
+  }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forChild(routes);

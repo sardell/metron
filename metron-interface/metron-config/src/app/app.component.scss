@@ -15,21 +15,46 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import "_variables.scss";
+ @import "_variables.scss";
 
-.navigation{
+ $navbar-width:       250px;
+ $navbar-width-sm:    50px;
+ $grid-gutter-width:  15px;
 
-  background-color: $gray-light;
-  border-right: solid 1px #4d4d4d;
-  border-top: solid 1px #4d4d4d;
-  border-bottom: solid 1px #4d4d4d;
-  bottom: 0px;
-  padding-left: 0px;
-  width: 240px;
-}
+ .navigation{
 
-.content{
-  background: $gray-dark;
-  border: none;
-  flex: 1;
-}
+   background-color: $gray-light;
+   border-right: solid 1px #4d4d4d;
+   border-top: solid 1px #4d4d4d;
+   border-bottom: solid 1px #4d4d4d;
+   bottom: 0px;
+   padding-left: 0px;
+   width: 240px;
+ }
+
+ .navbar {
+   flex-direction: row;
+   background: #2e2e2e;
+   padding: 0rem 1rem;
+   height: 68px;
+   line-height: 50px;
+   max-height: 68px;
+ }
+
+ .content{
+   background: $gray-dark;
+   border: none;
+   flex: 1;
+ }
+
+ .header { display: flex; }
+
+ .header,
+ .main {
+   transition: all .35s ease, color 0s, background-color 0s;
+   padding-left: calc(14rem + #{$grid-gutter-width});
+ }
+
+ .nav-collapsed {
+   padding-left: calc(#{$navbar-width-sm} + #{$grid-gutter-width});
+ }

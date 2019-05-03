@@ -15,29 +15,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { NgModule } from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
-import {AuthGuard} from './shared/auth-guard';
-import {LoginGuard} from './shared/login-guard';
 
-export const routes: Routes = [
-  { path: '',  redirectTo: 'sensors', pathMatch: 'full'},
-  { path: 'login', loadChildren: 'app/login/login.module#LoginModule', canActivate: [LoginGuard] },
-  {
-    path: 'sensors', loadChildren: 'app/sensors/sensor-parser-list/sensor-parser-list.module#SensorParserListModule',
-    canActivate: [AuthGuard], data: {
-      breadcrumb: 'Sensors'
-    }
-  }
-];
+ @import '../../fluid-variables';
+ @import '../../../../node_modules/bootstrap/scss/breadcrumb';
 
-export const appRoutingProviders: any[] = [
-];
+ .breadcrumb {
+   margin-bottom: 0;
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-  providers: []
-})
+   .breadcrumb-item {
+     font-size: 22px;
+     color: rgb(104, 154, 169);
 
-export class MetronConfigRoutingModule { }
+     &.active {
+       color: rgb(176, 176, 176);
+     }
+
+     a {
+       color: rgb(104, 154, 169);
+     }
+   }
+ }
