@@ -16,8 +16,11 @@
  * limitations under the License.
  */
 /* You can add global styles to this file, and also import other style files */
-@import "app/_variables.scss";
-@import "app/_fonts.scss";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/mixins";
+@import './app/functions';
+@import "./app/variables.scss";
+@import "./app/fonts.scss";
 
 $height: 60px;
 

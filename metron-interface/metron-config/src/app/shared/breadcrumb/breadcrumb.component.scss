@@ -15,8 +15,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
- @import '../../fluid-variables';
+ @import "../../../../node_modules/bootstrap/scss/functions";
+ @import "../../../../node_modules/bootstrap/scss/mixins";
+ @import '../variables';
  @import '../../../../node_modules/bootstrap/scss/breadcrumb';
 
  .breadcrumb {

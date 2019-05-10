@@ -15,52 +15,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import "../variables";
-@import './shared/variables'; // imported for navbar expanded and collapsed width
 
-.navbar
-{
-  flex-direction: row;
-  background: $nav-bar-bg;
-  padding: 0rem 1rem;
-  height: $navbar-brand-height;
-  line-height: 50px;
-  max-height: $navbar-brand-height;
-}
+ @function text-color($key: "default") {
+    @return map-get($text-colors, $key);
+  }
 
-.nav-link
-{
-  padding-bottom: 0;
-  padding-top: 0;
-  color: inherit;
-}
+  @function theme-icon($key) {
+    @return map-get($theme-icons, $key);
+  }
 
-.nav-item.active
-{
-  border-bottom: 3px solid #32abe2;
-  margin-bottom: 5px;
-}
+  @function status-icon($key) {
+    @return map-get($status-icons, $key);
+  }
 
-.nav-link.active
-{
-  color: #ffffff;
-}
-
-.logout {
-  padding-left: 10px;
-}
-
-.logout-link{
-  color: $all-ports;
-  cursor: pointer;
-}
-
-.header,
-.main {
-  @include transition($transition-collapse-all);
-  padding-left: calc(#{$navbar-width} + #{$grid-gutter-width});
-}
-
-.nav-collapsed {
-  padding-left: calc(#{$navbar-width-sm} + #{$grid-gutter-width});
-}
+  @function px($pixels, $basis: 1rem) {
+    @return (($pixels * 1px) / $root-font-size) * $basis;
+  }
