@@ -78,6 +78,7 @@
                     aria-label="Move column up in display order"
                     (mouseup)="swapUp(i, $event)"
                     (keyup.enter)="swapUp(i, $event)"
+                    (keyup.space)="swapUp(i, $event)"
                     [attr.disabled]="i === 0 ? true : null"
                     [ngClass]="{'disabled': i === 0}"></button>
           </td>
