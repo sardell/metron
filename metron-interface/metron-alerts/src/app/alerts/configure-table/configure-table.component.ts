@@ -321,6 +321,12 @@ export class ConfigureTableComponent implements OnInit, AfterViewInit {
     if (index > 0) {
       [this.visibleColumns[index], this.visibleColumns[index - 1]] = [this.visibleColumns[index - 1], this.visibleColumns[index]];
     }
+    /**
+    *  The default behavior of the browser causes the up arrow button to lose focus
+    *  on enter or space keypress, which differs in behavior when compared to the down arrow button.
+    *  This condition runs change detection (which removes the focus by applying default browser behavior)
+    *  and then re-applies focus to the up arrow.
+    */
     if (event.type === 'keyup') {
       this.cdRef.detectChanges();
       colUpButtons[index].nativeElement.focus();
