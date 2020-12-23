@@ -46,7 +46,7 @@
     "font-awesome": "^4.6.3",
     "jquery": "^3.4.1",
     "karma-phantomjs-launcher": "^1.0.4",
-    "ng-zorro-antd": "^7.5.1",
+    "ng-zorro-antd": "^11.0.0",
     "popper.js": "^1.15.0",
     "puppeteer": "^1.19.0",
     "rxjs": "6.5.2",
