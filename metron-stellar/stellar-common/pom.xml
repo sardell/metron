@@ -27,7 +27,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <commons.config.version>1.10</commons.config.version>
-        <guava_version>${global_guava_version}</guava_version>
+        <guava_version>30.0-android</guava_version>
     </properties>
     <dependencies>
         <dependency>
@@ -101,7 +101,7 @@
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <optional>true</optional>
-            <version>1.8.3</version>
+            <version>1.9.2</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -367,8 +367,7 @@
                             </artifactSet>
                             <transformers>
                                 <transformer implementation="org.atteo.classindex.ClassIndexTransformer"/>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.DontIncludeResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.DontIncludeResourceTransformer">
                                     <resources>
                                         <resource>.yaml</resource>
                                         <resource>LICENSE.txt</resource>
@@ -381,11 +380,9 @@
                                     <addHeader>false</addHeader>
                                     <projectName>${project.name}</projectName>
                                 </transformer-->
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass></mainClass>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass/>
                                 </transformer>
                             </transformers>
                         </configuration>
