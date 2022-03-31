@@ -32,14 +32,14 @@
         <spring.boot.version>2.0.1.RELEASE</spring.boot.version>
         <spring.kerberos.version>1.0.1.RELEASE</spring.kerberos.version>
         <spring.ldap.core.version>2.3.2.RELEASE</spring.ldap.core.version>
-        <spring.security.ldap.version>5.1.1.RELEASE</spring.security.ldap.version>
-        <swagger.version>2.5.0</swagger.version>
+        <spring.security.ldap.version>5.2.14.RELEASE</spring.security.ldap.version>
+        <swagger.version>2.10.0</swagger.version>
         <mysql.client.version>5.1.40</mysql.client.version>
-        <spring-kafka.version>2.0.4.RELEASE</spring-kafka.version>
+        <spring-kafka.version>2.7.12</spring-kafka.version>
         <spring.version>5.0.5.RELEASE</spring.version>
         <eclipse.link.version>2.6.4</eclipse.link.version>
-        <jsonpath.version>2.4.0</jsonpath.version>
-        <jwt.version>4.41.2</jwt.version>
+        <jsonpath.version>2.6.0</jsonpath.version>
+        <jwt.version>8.21.1</jwt.version>
     </properties>
     <dependencies>
         <dependency>
