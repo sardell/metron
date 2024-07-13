@@ -41,7 +41,7 @@
     "@types/node": "^10.9.4",
     "@types/tether": "^1.1.27",
     "ace-builds": "^1.2.5",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^5.0.0",
     "core-js": "^2.5.7",
     "font-awesome": "^4.6.3",
     "jquery": "^3.4.1",
