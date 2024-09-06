@@ -43,7 +43,7 @@
     "popper.js": "^1.14.7",
     "puppeteer": "^1.19.0",
     "rxjs": "^6.5.2",
-    "ts-node": "^7.0.0",
+    "ts-node": "^8.0.0",
     "web-animations-js": "^2.2.2",
     "zone.js": "^0.8.29"
   },
